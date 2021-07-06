@@ -6,6 +6,19 @@
   "version": "1.0.0",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.8",
+  "authors": [
+    {
+      "name": "MTVExtreme",
+      "discord": "MTVExtreme#1920",
+    },
+    {
+      "name": "Midnyte64",
+      "discord": "Geekswordsman#3085"
+    }
+  ],
+  "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
+  "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/module.json",
+  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/archive/refs/heads/main.zip",
   "packs": [
     {
       "name": "armorist-spheres",
