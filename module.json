@@ -1,0 +1,18 @@
+{
+  "name": "critical-fail-shared",
+  "title": "Critical Fail Shared Compedium",
+  "description": "Sharing data across worlds",
+  "author": "MTVExtreme",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "0.8.8",
+  "packs": [
+    {
+      "name": "armorist-spheres",
+      "label": "Armorist (SoP)",
+      "path": "packs/armorist.db",
+      "entity": "Item",
+      "module": "SharedData"
+    }
+  ]
+}
