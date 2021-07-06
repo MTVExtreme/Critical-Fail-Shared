@@ -3,7 +3,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across worlds",
   "author": "MTVExtreme",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.8",
   "authors": [
@@ -13,12 +13,14 @@
     },
     {
       "name": "Midnyte64",
-      "discord": "Geekswordsman#3085"
+      "discord": "Midnyte64#7936"
     }
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/module.json",
   "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/archive/refs/heads/main.zip",
+  "readme": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/README.md",
+  "changelog": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/CHANGELOG.md",
   "packs": [
     {
       "name": "armorist-spheres",
