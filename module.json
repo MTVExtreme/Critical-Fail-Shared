@@ -3,7 +3,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across worlds",
   "author": "MTVExtreme",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.8",
   "authors": [
@@ -14,6 +14,10 @@
     {
       "name": "Midnyte64",
       "discord": "Midnyte64#7936"
+    },
+    {
+      "name": "VampiricDarkDragon",
+      "discord": "VampiricDarkDragon#1517"
     }
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
@@ -28,6 +32,15 @@
       "path": "packs/armorist.db",
       "entity": "Item",
       "module": "SharedData"
+    },
+    {
+      "name": "vamps-monsters",
+      "label": "Monsters",
+      "system": "pf1",
+      "path": "packs/vamps-monsters.db",
+      "entity": "Actor",
+      "module": "SharedData"
     }
+
   ]
 }
