@@ -3,7 +3,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across worlds",
   "author": "MTVExtreme",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.8",
   "authors": [
@@ -29,7 +29,14 @@
     {
       "name": "armorist-spheres",
       "label": "Armorist (SoP)",
-      "path": "packs/armorist.db",
+      "path": "packs/classes/armorist.db",
+      "entity": "Item",
+      "module": "SharedData"
+    },
+    {
+      "name": "mageknight-spheres",
+      "label": "Mageknight (SoP)",
+      "path": "packs/classes/mageknight.db",
       "entity": "Item",
       "module": "SharedData"
     },
