@@ -29,6 +29,7 @@
     {
       "name": "armorist-spheres",
       "label": "Armorist (SoP)",
+      "system": "pf1",
       "path": "packs/classes/armorist.db",
       "entity": "Item",
       "module": "SharedData"
@@ -36,6 +37,7 @@
     {
       "name": "mageknight-spheres",
       "label": "Mageknight (SoP)",
+      "system": "pf1",
       "path": "packs/classes/mageknight.db",
       "entity": "Item",
       "module": "SharedData"

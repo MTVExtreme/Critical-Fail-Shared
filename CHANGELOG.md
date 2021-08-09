@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.2] - 2021-08-9
+
+### Added
+
+- Fixed Class Features for Mageknight and Armorist not showing in browser compendium. (Hopefully lol)
+
 ## [0.2.1] - 2021-08-9
 
 ### Added
