@@ -3,9 +3,9 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across worlds",
   "author": "MTVExtreme",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "minimumCoreVersion": "0.8.6",
-  "compatibleCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "0.8.9",
   "authors": [
     {
       "name": "MTVExtreme",
@@ -18,6 +18,18 @@
     {
       "name": "VampiricDarkDragon",
       "discord": "VampiricDarkDragon#1517"
+    },
+    {
+      "name": "PoorWarrior",
+      "discord": "PoorWarrior#3872"
+    },
+    {
+      "name": "Hyamda",
+      "discord": "Hyamda#0342"
+    },
+    {
+      "name": "Zavex Capricious",
+      "discord": "Zavex Capricious#4489"
     }
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
@@ -49,7 +61,22 @@
       "path": "packs/vamps-monsters.db",
       "entity": "Actor",
       "module": "SharedData"
+    },
+    {
+      "name": "buffs",
+      "label": "Buffs",
+      "system": "pf1",
+      "path": "packs/buffs.db",
+      "entity": "Item",
+      "module": "SharedData"
+    },
+    {
+      "name": "races",
+      "label": "Azure Realm Races",
+      "system": "pf1",
+      "path": "packs/races.db",
+      "entity": "Item",
+      "module": "SharedData"
     }
-
   ]
 }
