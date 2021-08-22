@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Added Azure Realms races. Races added: Bunnyfolk, Cerastes, Changling, Crow and Longnose Tengu, Dragon Neko, High Neko, Nekomata, Neko, Drakyn, Half Oni, Hugh Fairy, Moon Fey, Treehorn, and starfinder port of Vesk.
+- Added Azure Realms races. Races added: Bunnyfolk, Cerastes, Changling, Crow and Longnose Tengu, Dragon Neko, High Neko, Nekomata, Neko, Drakyn, Half Oni, High Fairy, Moon Fey, Treehorn, and starfinder port of Vesk.
 - Added buffs compedium. Starting with buffs for animal focus.
 - Added PoorWarrior, Hyamda, and Zavex Capricious to author list.
 
