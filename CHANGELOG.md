@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.1] - 2021-08-22
+
+### Added
+
+- Consolidated all class features into one pack.
+- Fixed up class features. (Thanks Midnyte and Poor!)
+
+
 ## [0.3.0] - 2021-08-22
 
 ### Added
