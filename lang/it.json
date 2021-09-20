@@ -1,0 +1,53 @@
+{
+    "PF1AS": {
+        "InfoMissingClass": "Al tuo personaggio manca una classe. Vai alla sezione Capacità e aggiungine una.",
+        "CharacterSheetLabel": "Alternative character sheet",
+        "NPCSheetLabel": "Alternative NPC character sheet",
+        "ExperienceShort": "PE",
+        "Abilities": "Caratteristiche",
+        "AbilityScores": "Modificatori Caratteristiche",
+        "ACShort": "C.A.",
+        "FFShort": "Imprep.",
+        "NatAC": "CA Naturale",
+        "SpellRes": "Res. Inc.",
+        "Levels": "Levelli",
+        "TouchShort": "Contatto",
+        "PointBuy": "Usa Point Buy",
+        "SpeedAndMovement": "Velocità e Movimento",
+        "AttackBonuses": "Bonus Attacco",
+        "BaseCombatStats": "Stat.Base Combattimento",
+        "ClassNoFeatures": "Classe non ha talenti",
+        "DieLetter": "D",
+        "NoFeatures": "Crea (+) o trascina da un compendio in questa lista",
+        "SpecialQualities": "Qualità Speciali",
+        "CombatManeuvers": "Manovre in Combattimento",
+        "CasterLevel": "LIvello Incantatore",
+        "Roll": "Lancia",
+        "Level0": "0.",
+        "Level1": "1.",
+        "Level2": "2.",
+        "Level3": "3.",
+        "Level4": "4.",
+        "Level5": "5.",
+        "Level6": "6.",
+        "Level7": "7.",
+        "Level8": "8.",
+        "Level9": "9.",
+        "Spells": {
+            "CannotCast": "Non puoi lanciare incantesimi di questo livello perche:",
+            "CannotCastAbilityScore": "- il tuo punteggio di caratteristica non è sufficiente"
+        },
+        "Skill": {
+            "AlwaysShow": "MS",
+            "AlwaysShowTooltip": "Mostra sempre nella sezione Sommario"
+        },
+        "Features": {
+            "MinimizeClasses": "Riduci visualizzazione Classi"
+        },
+        "Config": {
+            "Reset": "Reset configurazione scheda",
+            "ResetTooltip": "Cancella la config specifica del modulo per questo attore e ripristina a default. Consigliato quando qualcosa sembra essersi rotto."
+        },
+        "MetricSpeeds": "Stai usando il sistema metrico.\nSi prega inserire comunque dati in ft.\nValori tipici:\n20 ft = 6 m\n30 ft = 9 m"
+    }
+}

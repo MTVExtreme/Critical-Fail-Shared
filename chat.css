@@ -1,0 +1,172 @@
+.pf1knw .fake-inline-roll {
+  background: #ddd;
+  padding: 1px 4px;
+  border: 1px solid #4b4a44;
+  border-radius: 2px;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+.pf1knw.chat-card {
+  font-style: normal;
+  font-size: 12px;
+}
+.pf1knw.chat-card .card-header {
+  padding: 3px 0;
+  border-top: 2px groove #fff;
+  border-bottom: 2px groove #fff;
+}
+.pf1knw.chat-card .card-header img {
+  flex: 0 0 36px;
+  margin-right: 5px;
+}
+.pf1knw.chat-card .card-header h3 {
+  flex: 1;
+  margin: 0;
+  line-height: 28px;
+  font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+  font-size: 22px;
+  font-variant: small-caps;
+  color: #4b4a44;
+}
+.pf1knw.chat-card .card-content {
+  margin: 5px 0;
+}
+.pf1knw.chat-card .card-content h3 {
+  font-size: 12px;
+  margin: 0;
+  font-weight: bold;
+}
+.pf1knw.chat-card .card-content > * {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.pf1knw.chat-card .card-range {
+  display: block;
+  margin: 0 2px 1px 0;
+  padding: 1px 3px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+  flex: 0 1 auto;
+  text-align: center;
+}
+.pf1knw.chat-card .card-range:hover {
+  border-color: blue;
+}
+.pf1knw.chat-card .nat20 {
+  flex: 0 0 auto;
+  margin-right: 5px;
+  border-bottom: unset;
+  box-shadow: inset 0px -2px 0px 0px #782e22;
+  font-size: 1.5em;
+  color: #4c964c;
+  font-weight: bold;
+}
+.pf1knw.chat-card .card-buttons {
+  margin: 2px 0;
+  flex: 0 0 auto;
+}
+.pf1knw.chat-card .card-buttons .card-button-group label {
+  text-align: center;
+}
+.pf1knw.chat-card .card-buttons button {
+  font-size: 12px;
+  height: 20px;
+  line-height: 16px;
+  margin: 2px 0;
+}
+.pf1knw.chat-card .card-buttons button[data-action="save"] {
+  height: 34px;
+  font-size: 14px;
+}
+.pf1knw.chat-card .card-buttons.save {
+  height: 35px;
+}
+.pf1knw.chat-card .card-buttons span {
+  display: block;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.pf1knw.chat-card .card-footer {
+  padding: 3px 0 0;
+  border-top: 2px groove #fff;
+}
+.pf1knw.chat-card .card-footer .spell-failure {
+  padding: 4px;
+  margin-bottom: 4px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+.pf1knw.chat-card .card-footer .spell-failure h3 {
+  color: #4c6d9f;
+  font-size: 16px;
+  text-align: center;
+}
+.pf1knw.chat-card .card-footer .spell-failure .dice-roll,
+.pf1knw.chat-card .card-footer .spell-failure .dice-total {
+  padding: 0;
+}
+.pf1knw.chat-card .attack-row,
+.pf1knw.chat-card .damage-row {
+  align-items: baseline;
+}
+.pf1knw.chat-card .attack-row a.inline-result,
+.pf1knw.chat-card .crit-confirm a.inline-result,
+.pf1knw.chat-card .damage-row a.inline-result {
+  border-radius: 2px;
+  font-size: 1.3em;
+}
+.pf1knw.chat-card .attack-row h1,
+.pf1knw.chat-card .damage-row h1 {
+  margin-bottom: 4px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-bottom: unset;
+  box-shadow: inset 0px -2px 0px 0px #782e22;
+}
+.pf1knw.chat-card .attack-row h2,
+.pf1knw.chat-card .damage-row h2 {
+  font-size: 1.3em;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.pf1knw.chat-card .fake-inline-roll {
+  padding: 1px 4px 0 4px;
+  color: black;
+  text-shadow: none;
+  font-weight: normal;
+}
+.pf1knw.chat-card .fake-inline-roll i {
+  color: #7a7971;
+}
+.pf1knw.chat-card .damage-row .fake-inline-roll {
+  font-size: 1.3em;
+  margin-left: 5px;
+}
+.pf1knw.chat-card .inline-roll,
+.pf1knw.chat-card .fake-inline-roll {
+  flex: 0;
+  height: 100%;
+}
+.pf1knw.chat-card .inline-roll .dice-tooltip,
+.pf1knw.chat-card .fake-inline-roll .dice-tooltip {
+  z-index: 1;
+}
+.pf1knw.chat-card .inline-roll .dice-tooltip .part-header .part-formula,
+.pf1knw.chat-card .fake-inline-roll .dice-tooltip .part-header .part-formula {
+  text-align: left;
+}
+.pf1knw.chat-card .inline-roll.success,
+.pf1knw.chat-card .fake-inline-roll.success {
+  background-color: #60c060;
+}
+.pf1knw.chat-card .inline-roll.failure,
+.pf1knw.chat-card .fake-inline-roll.failure {
+  background-color: #c06060;
+}

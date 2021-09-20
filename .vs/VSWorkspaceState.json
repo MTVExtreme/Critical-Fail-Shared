@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\lang",
+    "\\module",
+    "\\templates",
+    "\\templates\\chat",
+    "\\templates\\parts"
   ],
-  "SelectedNode": "\\CHANGELOG.md",
+  "SelectedNode": "\\module\\helpers.js",
   "PreviewInSolutionExplorer": false
 }

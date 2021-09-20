@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] - 2021-09-20
+
+### Added
+
+- Added custom sheet for S&F Units.
+
+### Updated
+
+- Fixed links between classes and features.
+
+
 ## [0.3.1] - 2021-08-26
 
 ### Added
