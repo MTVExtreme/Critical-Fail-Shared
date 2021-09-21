@@ -3,10 +3,11 @@
     "",
     "\\lang",
     "\\module",
+    "\\packs",
     "\\templates",
     "\\templates\\chat",
     "\\templates\\parts"
   ],
-  "SelectedNode": "\\module\\helpers.js",
+  "SelectedNode": "\\module.json",
   "PreviewInSolutionExplorer": false
 }
