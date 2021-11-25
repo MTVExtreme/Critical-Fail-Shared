@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.3] - 2021-11-24
+
+- Fixed most monster images not working. (My Bad)
+
 ## [0.4.2] - 2021-11-24
 
 - Added many more monsters and templates (Thanks VampiricDarkDragon!)
