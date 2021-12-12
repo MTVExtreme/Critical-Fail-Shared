@@ -3,7 +3,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across worlds",
   "author": "MTVExtreme",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.9",
   "authors": [
@@ -41,47 +41,55 @@
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/latest/download/module.json",
-  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/0.4.3/module.zip",
+  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/0.5.0/module.zip",
   "readme": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/README.md",
   "changelog": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/CHANGELOG.md",
   "packs": [
     {
-      "name": "classes",
-      "label": "Classes",
+      "name": "azure-classes",
+      "label": "Azure Realms Classes",
       "system": "pf1",
-      "path": "packs/classes.db",
+      "path": "packs/azure-classes.db",
       "entity": "Item",
       "module": "SharedData"
     },
     {
-      "name": "vamps-monsters",
-      "label": "Monsters",
+      "name": "azure-monsters",
+      "label": "Azure Realms Monsters",
       "system": "pf1",
-      "path": "packs/vamps-monsters.db",
+      "path": "packs/azure-monsters.db",
       "entity": "Actor",
       "module": "SharedData"
     },
     {
-      "name": "vamps-templates",
+      "name": "azure-templates",
       "label": "Monster Templates",
       "system": "pf1",
-      "path": "packs/vamps-templates.db",
+      "path": "packs/azure-templates.db",
       "entity": "Item",
       "module": "SharedData"
     },
     {
-      "name": "buffs",
-      "label": "Buffs",
+      "name": "azure-items",
+      "label": "Azure Realms Items",
       "system": "pf1",
-      "path": "packs/buffs.db",
+      "path": "packs/azure-items.db",
       "entity": "Item",
       "module": "SharedData"
     },
     {
-      "name": "races",
+      "name": "azure-buffs",
+      "label": "Azure Realm Buffs",
+      "system": "pf1",
+      "path": "packs/azure-buffs.db",
+      "entity": "Item",
+      "module": "SharedData"
+    },
+    {
+      "name": "azure-races",
       "label": "Azure Realm Races",
       "system": "pf1",
-      "path": "packs/races.db",
+      "path": "packs/azure-races.db",
       "entity": "Item",
       "module": "SharedData"
     }

@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.0] - 2021-12-11
+
+### Added
+- Added several new monsters.
+- Added several templates (Thanks VampiricDarkDragon!)
+- Added all the Lizardfolk Races & Subraces
+- Added new item compedium for equipment (Thanks Again VampiricDarkDragon!) 
+- Added several other new races. (Thanks Poor!)
+
+### Updated
+
+- Fixed several racial statblocks. (Thanks Poor and Midnyte!)
+- (Breaking) Renamed packs with more consistant scheme.
+
 ## [0.4.3] - 2021-11-24
 
 - Fixed most monster images not working. (My Bad)
