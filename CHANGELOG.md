@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.6.0] - 2021-12-26
+
+### Added
+- Added many new monsters.
+- Added card deck images. (Hero Cards to be added in 0.6.1)
+- Support for foundry v9.
+
 ## [0.5.0] - 2021-12-11
 
 ### Added
