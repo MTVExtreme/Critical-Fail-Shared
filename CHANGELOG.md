@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.6.2] - 2022-1-14
+
+##Removed
+
+- Old character sheet that's not needed anymore.
+
 ## [0.6.1] - 2022-1-14
 
 ##Removed
