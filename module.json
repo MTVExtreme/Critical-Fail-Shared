@@ -1,10 +1,10 @@
 {
   "name": "critical-fail-shared",
   "title": "Critical Fail Shared Compedium",
-  "description": "Sharing data across servers",
+  "description": "Sharing data across worlds",
   "author": "MTVExtreme",
-  "version": "0.6.1",
-  "minimumCoreVersion": 9,
+  "version": "0.6.0",
+  "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": 9,
   "authors": [
     {
@@ -41,7 +41,7 @@
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/latest/download/module.json",
-  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/0.6.1/module.zip",
+  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/0.6.0/module.zip",
   "readme": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/README.md",
   "changelog": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/CHANGELOG.md",
   "packs": [
@@ -92,22 +92,6 @@
       "path": "packs/azure-races.db",
       "entity": "Item",
       "module": "SharedData"
-    },
-    {
-      "name": "azure-tables",
-      "label": "Azure Realm Tables",
-      "system": "pf1",
-      "path": "packs/azure-tables.db",
-      "entity": "RollTable",
-      "module": "SharedData"
-    },
-    {
-      "name": "azure-cards",
-      "label": "Azure Realm Cards",
-      "system": "pf1",
-      "path": "packs/azure-cards.db",
-      "entity": "Cards",
-      "module": "SharedData"
     }
   ],
   "dependencies": [
@@ -120,5 +104,5 @@
       "type": "module"
     }
   ],
-  "minimumSystemVersion": "0.84.0"
+  "minimumSystemVersion": "0.79.0"
 }

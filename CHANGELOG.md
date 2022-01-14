@@ -2,14 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.6.1] - 2022-1-14
-
-### Added
-- Added hero and inspiration card decks.
-- Added some pathfinder roll tables for loot & shops
-
-NOTE: Module no longer supported for Foundry V8 and lower.
-
 ## [0.6.0] - 2021-12-26
 
 ### Added
