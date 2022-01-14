@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.6.1] - 2022-1-14
+
+##Removed
+
+- Support for foundry v8.
+
+### Added
+- Added hero and inspiration card decks 
+- Added RollTables for loot & Shops
+
+
+### Updated
+
+- Updated to Lastest in Foundry Dump.
+
 ## [0.6.0] - 2021-12-26
 
 ### Added
