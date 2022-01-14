@@ -32,13 +32,6 @@
       "discord": "Zavex Capricious#4489"
     }
   ],
-  "esmodules": [
-    "./altsheet.js"
-  ],
-  "styles": [
-    "style.css",
-    "chat.css"
-  ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/latest/download/module.json",
   "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v0.6.2/module.zip",
@@ -114,10 +107,6 @@
     {
       "name": "pf1",
       "type": "system"
-    },
-    {
-      "name": "lib-wrapper",
-      "type": "module"
     }
   ],
   "minimumSystemVersion": "0.80.4"
