@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.6.3] - 2022-1-14
+
+##Updated
+
+- Added more monsters to compedium.
+
 ## [0.6.2] - 2022-1-14
 
 ##Removed
