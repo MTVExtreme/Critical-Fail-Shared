@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.6.4] - 2022-2-19
+
+##Updated
+
+- Added more monsters to compedium.
+- Fixed issues with cards. Updated Card names to be the name of the card instead of numbers.
+
 ## [0.6.3] - 2022-2-06
 
 ##Updated
