@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.6.5] - 2022-5-02
+
+##Added
+
+- Added deleted bestiaries from PF Syetem to module. 
+
 ## [0.6.4] - 2022-2-19
 
 ##Updated

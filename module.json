@@ -3,7 +3,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across worlds",
   "author": "MTVExtreme",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "minimumCoreVersion": "0.9.235",
   "compatibleCoreVersion": 9,
   "authors": [
@@ -34,7 +34,7 @@
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/latest/download/module.json",
-  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v0.6.4/module.zip",
+  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v0.6.5/module.zip",
   "readme": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/README.md",
   "changelog": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/CHANGELOG.md",
   "packs": [
@@ -101,6 +101,62 @@
       "path": "packs/azure-races.db",
       "type": "Item",
       "module": "SharedData"
+    },
+    {
+      "name": "bestiary-00",
+      "label": "Bestiary - CR 0-1",
+      "system": "pf1",
+      "path": "packs/bestiary-00.db",
+      "type": "Actor"
+    },
+    {
+      "name": "bestiary-02",
+      "label": "Bestiary - CR 2-3",
+      "system": "pf1",
+      "path": "packs/bestiary-02.db",
+      "type": "Actor"
+    },
+    {
+      "name": "bestiary-04",
+      "label": "Bestiary - CR 4-5",
+      "system": "pf1",
+      "path": "packs/bestiary-04.db",
+      "type": "Actor"
+    },
+    {
+      "name": "bestiary-06",
+      "label": "Bestiary - CR 6-7",
+      "system": "pf1",
+      "path": "packs/bestiary-06.db",
+      "type": "Actor"
+    },
+    {
+      "name": "bestiary-08",
+      "label": "Bestiary - CR 8-10",
+      "system": "pf1",
+      "path": "packs/bestiary-08.db",
+      "type": "Actor"
+    },
+    {
+      "name": "bestiary-11",
+      "label": "Bestiary - CR 11-14",
+      "system": "pf1",
+      "path": "packs/bestiary-11.db",
+      "type": "Actor"
+    },
+    {
+      "name": "bestiary-15",
+      "label": "Bestiary - CR 15-19",
+      "system": "pf1",
+      "path": "packs/bestiary-15.db",
+      "type": "Actor"
+    },
+    {
+      "name": "bestiary-20",
+      "label": "Bestiary - CR 20+",
+      "system": "pf1",
+      "path": "packs/bestiary-20.db",
+      "type": "Actor"
     }
   ],
   "dependencies": [
