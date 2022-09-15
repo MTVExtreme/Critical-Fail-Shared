@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2022-9-15
+
+##Updated
+
+- Slight Adjustment to module.json file. Hopefully removes V10 Warning.
 
 ## [1.0.0] - 2022-9-15
 
