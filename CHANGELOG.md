@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+
+## [1.0.0] - 2022-9-15
+
+##Added
+
+- Added Tin and Bronze Hero Card decks. 
+- Added 90% of Custom Azure Realm Races (Thanks PoorWarrior!).
+- Added Azure Realm Feats like Lucky and Unlucky.
+- Started adding Family Traits (Thanks PoorWarrior!).
+
+##Updated
+
+- Updated the module for Foundry V10
+- Fixed up Inspiration Token Deck having cards pre-pulled.
+- Updated all monsters to use webp images. (Thanks VampiricDarkDragon!)
+- Updated larger compendiums to use Compendium Folders module.
+
+##Removed
+
+- Removed bestiaries from PF System from module as a new official one was made.
+
+
 ## [0.6.5] - 2022-5-02
 
 ##Added
