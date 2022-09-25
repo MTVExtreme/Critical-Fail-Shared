@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2022-9-25
+
+##Updated
+
+- Actually added new cards and fixed Inspiration Token Deck having cards pre-pulled.
+
 ## [1.0.1] - 2022-9-15
 
 ##Updated
