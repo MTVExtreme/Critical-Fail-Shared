@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2023-1-30
+
+- Added some Desert Monsters. (Thanks VampiricDarkDragon!)
+
+##Updated
+
+- Actually added new cards and fixed Inspiration Token Deck having cards pre-pulled.
+
 ## [1.0.2] - 2022-9-25
 
 ##Updated
