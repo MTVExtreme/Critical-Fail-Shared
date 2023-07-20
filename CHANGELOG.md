@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.4] - 2023-1-30
+## [1.1.0] - 2023-7-19
+
+- Added Foundry V11 support. 
+- Added some monsters. (Thanks VampiricDarkDragon!)
+- Refactored Monster Folders into respective subfolders.
+- Migrated all folders to use new built in V11 folders instead of Compedium folders module
+- Combined Buffs, classes, family traits, feats, items, races, and templates into 1 DB file seperated by folders.
+- Added Ratatosk and Racosa races.
+
+
+## [1.0.4] - 2023-6-19
 
 - Added some monsters Monsters. (Thanks VampiricDarkDragon!)
 - Added lettering for AnVAc races later.
