@@ -2,12 +2,12 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across our universe",
   "author": "MTVExtreme",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "authors": [
     {
       "name": "MTVExtreme",
       "discord": "mtvextreme",
-      "email":  "mtvextreme1998@gmail.com"
+      "email": "mtvextreme1998@gmail.com"
     },
     {
       "name": "Midnyte64",
@@ -32,41 +32,59 @@
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/latest/download/module.json",
-  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v1.1.0/module.zip",
-  "readme": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/README.md",
-  "changelog": "https://github.com/MTVExtreme/Critical-Fail-Shared/blob/main/CHANGELOG.md",
-  "packFolders": [
-    {
-      "name": "Azure Realms Items",
-      "packs": [
-        "azure-realms-items"
-      ],
-      "color": "#777777"
-    },
-    {
-      "name": "Azure Realms Monsters",
-      "packs": [
-        "azure-realms-monsters"
-      ],
-      "color": "#996300"
-    }
-  ],
+  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v1.1.1/module.zip",
+  "readme": "https://raw.githubusercontent.com/MTVExtreme/Critical-Fail-Shared/main/README.md",
+  "changelog": "https://raw.githubusercontent.com/MTVExtreme/Critical-Fail-Shared/main/CHANGELOG.md",
   "packs": [
     {
-      "name": "azure-cards",
-      "label": "Azure Realm Cards",
+      "name": "azure-realms-monsters",
+      "label": "Azure Realms Monsters",
       "system": "pf1",
-      "path": "packs/azure-cards.db",
-      "type": "Cards",
-      "module": "SharedData"
-    }
-  ],
-  "dependencies": [
+      "path": "packs/azure-realms-monsters",
+      "type": "Actor",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
     {
-      "name": "pf1",
-      "type": "system"
+      "name": "azure-realms-items",
+      "label": "Azure Realms Items",
+      "system": "pf1",
+      "path": "packs/azure-realms-items",
+      "type": "Item",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "azure-realms-cards",
+      "label": "Azure Realms Cards",
+      "system": "pf1",
+      "path": "packs/azure-realms-cards",
+      "type": "Cards",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf1",
+        "type": "system",
+        "compatibility": {
+          "minimum": "9.0",
+          "verified": "9.2"
+        }
+      }
+    ]
+  },
   "minimumSystemVersion": "9.0",
   "id": "critical-fail-shared",
   "compatibility": {

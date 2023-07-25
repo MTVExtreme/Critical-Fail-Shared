@@ -1,1 +1,5 @@
-2023/07/19-20:09:58.897 7860 Delete type=3 #1
+2023/07/25-19:13:23.711 8dc0 Delete type=3 #1
+2023/07/25-19:29:49.583 aac4 Level-0 table #5: started
+2023/07/25-19:29:49.752 aac4 Level-0 table #5: 19335669 bytes OK
+2023/07/25-19:29:49.762 aac4 Delete type=0 #3
+2023/07/25-19:29:49.771 aac4 Manual compaction at level-0 from '!actors!0BXKjgv3rWGYvskb' @ 72057594037927935 : 1 .. '!folders!yI6Oms9kqr5W4PD2' @ 0 : 0; will stop at (end)
