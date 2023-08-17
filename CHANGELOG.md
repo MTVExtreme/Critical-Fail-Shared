@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2023-8-17
+
+- Added previous campaign character sheets.
+- Added some monsters. (Thanks VampiricDarkDragon!)
+
 ## [1.1.1] - 2023-7-25
 
 - Fixed V11 support
