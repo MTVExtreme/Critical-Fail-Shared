@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3] - 2023-10-1
+
+- Updated Card Decks to lastest version of Critical Fail PF1e Cards
+- Added/Updated some monsters. (Thanks VampiricDarkDragon!)
+
 ## [1.1.2] - 2023-8-17
 
 - Added previous campaign character sheets.
