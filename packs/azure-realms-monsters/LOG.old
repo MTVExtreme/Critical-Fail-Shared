@@ -1,35 +1,71 @@
-2023/09/20-15:46:04.607 1d70 Recovering log #60
-2023/09/20-15:46:04.611 1d70 Level-0 table #62: started
-2023/09/20-15:46:04.621 1d70 Level-0 table #62: 1122171 bytes OK
-2023/09/20-15:46:04.634 1d70 Delete type=0 #60
-2023/09/20-15:46:04.634 1d70 Delete type=3 #59
-2023/09/20-15:46:04.698 8edc Compacting 1@0 + 0@1 files
-2023/09/20-15:46:04.708 8edc Generated table #64@0: 256 keys, 581379 bytes
-2023/09/20-15:46:04.708 8edc Compacted 1@0 + 0@1 files => 581379 bytes
-2023/09/20-15:46:04.710 8edc compacted to: files[ 0 1 10 0 0 0 0 ]
-2023/09/21-00:19:40.979 8edc Compacting 1@1 + 10@2 files
-2023/09/21-00:19:40.999 8edc Generated table #65@1: 363 keys, 2114193 bytes
-2023/09/21-00:19:41.020 8edc Generated table #66@1: 1057 keys, 2121853 bytes
-2023/09/21-00:19:41.042 8edc Generated table #67@1: 1414 keys, 2127234 bytes
-2023/09/21-00:19:41.063 8edc Generated table #68@1: 1453 keys, 2127354 bytes
-2023/09/21-00:19:41.083 8edc Generated table #69@1: 1431 keys, 2125453 bytes
-2023/09/21-00:19:41.105 8edc Generated table #70@1: 1461 keys, 2125800 bytes
-2023/09/21-00:19:41.126 8edc Generated table #71@1: 1415 keys, 2127302 bytes
-2023/09/21-00:19:41.146 8edc Generated table #72@1: 1417 keys, 2124960 bytes
-2023/09/21-00:19:41.166 8edc Generated table #73@1: 1448 keys, 2125663 bytes
-2023/09/21-00:19:41.186 8edc Generated table #74@1: 1377 keys, 2124957 bytes
-2023/09/21-00:19:41.189 8edc Generated table #75@1: 121 keys, 51695 bytes
-2023/09/21-00:19:41.189 8edc Compacted 1@1 + 10@2 files => 21296464 bytes
-2023/09/21-00:19:41.191 8edc compacted to: files[ 0 0 11 0 0 0 0 ]
-2023/09/21-00:19:41.191 8edc Delete type=2 #49
-2023/09/21-00:19:41.191 8edc Delete type=2 #50
-2023/09/21-00:19:41.191 8edc Delete type=2 #51
-2023/09/21-00:19:41.192 8edc Delete type=2 #52
-2023/09/21-00:19:41.192 8edc Delete type=2 #53
-2023/09/21-00:19:41.193 8edc Delete type=2 #54
-2023/09/21-00:19:41.193 8edc Delete type=2 #55
-2023/09/21-00:19:41.193 8edc Delete type=2 #56
-2023/09/21-00:19:41.194 8edc Delete type=2 #57
-2023/09/21-00:19:41.194 8edc Delete type=2 #58
-2023/09/21-00:19:41.194 8edc Delete type=2 #62
-2023/09/21-00:19:41.194 8edc Delete type=2 #64
+2023/11/29-11:30:44.493 5174 Recovering log #156
+2023/11/29-11:30:44.494 5174 Level-0 table #158: started
+2023/11/29-11:30:44.499 5174 Level-0 table #158: 208246 bytes OK
+2023/11/29-11:30:44.513 5174 Delete type=0 #156
+2023/11/29-11:30:44.514 5174 Delete type=3 #155
+2023/11/29-11:30:44.583 53bc Compacting 1@0 + 0@1 files
+2023/11/29-11:30:44.588 53bc Generated table #160@0: 105 keys, 207969 bytes
+2023/11/29-11:30:44.598 53bc Generated table #161@0: 1 keys, 400 bytes
+2023/11/29-11:30:44.598 53bc Compacted 1@0 + 0@1 files => 208369 bytes
+2023/11/29-11:30:44.602 53bc compacted to: files[ 0 2 14 0 0 0 0 ]
+2023/11/29-22:07:12.004 53bc Compacting 1@1 + 5@2 files
+2023/11/29-22:07:12.036 53bc Generated table #162@1: 364 keys, 2112140 bytes
+2023/11/29-22:07:12.068 53bc Generated table #163@1: 995 keys, 2121067 bytes
+2023/11/29-22:07:12.104 53bc Generated table #164@1: 1436 keys, 2125994 bytes
+2023/11/29-22:07:12.140 53bc Generated table #165@1: 1416 keys, 2128583 bytes
+2023/11/29-22:07:12.174 53bc Generated table #166@1: 1461 keys, 2127112 bytes
+2023/11/29-22:07:12.179 53bc Generated table #167@1: 103 keys, 173434 bytes
+2023/11/29-22:07:12.179 53bc Compacted 1@1 + 5@2 files => 10788330 bytes
+2023/11/29-22:07:12.181 53bc compacted to: files[ 0 1 15 0 0 0 0 ]
+2023/11/29-22:07:12.182 53bc Delete type=2 #123
+2023/11/29-22:07:12.182 53bc Delete type=2 #124
+2023/11/29-22:07:12.182 53bc Delete type=2 #125
+2023/11/29-22:07:12.183 53bc Delete type=2 #126
+2023/11/29-22:07:12.183 53bc Delete type=2 #127
+2023/11/29-22:07:12.184 53bc Delete type=2 #158
+2023/11/29-22:07:12.184 53bc Delete type=2 #160
+2023/12/03-17:38:47.113 53bc Level-0 table #169: started
+2023/12/03-17:38:47.129 53bc Level-0 table #169: 701620 bytes OK
+2023/12/03-17:38:47.132 53bc Delete type=0 #159
+2023/12/03-17:38:47.145 53bc Manual compaction at level-0 from '!actors!0BXKjgv3rWGYvskb' @ 72057594037927935 : 1 .. '!folders!yI6Oms9kqr5W4PD2' @ 0 : 0; will stop at '!folders!R4NJnjp3nt29IC8k' @ 14925 : 1
+2023/12/03-17:38:47.145 53bc Compacting 1@0 + 0@1 files
+2023/12/03-17:38:47.156 53bc Generated table #170@0: 296 keys, 532129 bytes
+2023/12/03-17:38:47.159 53bc Generated table #171@0: 32 keys, 38472 bytes
+2023/12/03-17:38:47.159 53bc Compacted 1@0 + 0@1 files => 570601 bytes
+2023/12/03-17:38:47.161 53bc compacted to: files[ 0 3 15 0 0 0 0 ]
+2023/12/03-17:38:47.161 53bc Delete type=2 #169
+2023/12/03-17:38:47.177 53bc Manual compaction at level-0 from '!folders!R4NJnjp3nt29IC8k' @ 14925 : 1 .. '!folders!yI6Oms9kqr5W4PD2' @ 0 : 0; will stop at (end)
+2023/12/03-17:38:47.177 53bc Manual compaction at level-1 from '!actors!0BXKjgv3rWGYvskb' @ 72057594037927935 : 1 .. '!folders!yI6Oms9kqr5W4PD2' @ 0 : 0; will stop at '!folders!aDNBAk4AgCFj7u8L' @ 14627 : 1
+2023/12/03-17:38:47.177 53bc Compacting 3@1 + 15@2 files
+2023/12/03-17:38:47.208 53bc Generated table #172@1: 366 keys, 2112566 bytes
+2023/12/03-17:38:47.241 53bc Generated table #173@1: 954 keys, 2121602 bytes
+2023/12/03-17:38:47.277 53bc Generated table #174@1: 1431 keys, 2125917 bytes
+2023/12/03-17:38:47.312 53bc Generated table #175@1: 1413 keys, 2125798 bytes
+2023/12/03-17:38:47.347 53bc Generated table #176@1: 1470 keys, 2127644 bytes
+2023/12/03-17:38:47.384 53bc Generated table #177@1: 1397 keys, 2125443 bytes
+2023/12/03-17:38:47.421 53bc Generated table #178@1: 1460 keys, 2127660 bytes
+2023/12/03-17:38:47.456 53bc Generated table #179@1: 1391 keys, 2126851 bytes
+2023/12/03-17:38:47.490 53bc Generated table #180@1: 1474 keys, 2126238 bytes
+2023/12/03-17:38:47.525 53bc Generated table #181@1: 1428 keys, 2129023 bytes
+2023/12/03-17:38:47.553 53bc Generated table #182@1: 1118 keys, 1590279 bytes
+2023/12/03-17:38:47.553 53bc Compacted 3@1 + 15@2 files => 22839021 bytes
+2023/12/03-17:38:47.555 53bc compacted to: files[ 0 0 11 0 0 0 0 ]
+2023/12/03-17:38:47.556 53bc Delete type=2 #90
+2023/12/03-17:38:47.556 53bc Delete type=2 #105
+2023/12/03-17:38:47.557 53bc Delete type=2 #128
+2023/12/03-17:38:47.558 53bc Delete type=2 #129
+2023/12/03-17:38:47.558 53bc Delete type=2 #130
+2023/12/03-17:38:47.559 53bc Delete type=2 #131
+2023/12/03-17:38:47.560 53bc Delete type=2 #132
+2023/12/03-17:38:47.560 53bc Delete type=2 #133
+2023/12/03-17:38:47.561 53bc Delete type=2 #140
+2023/12/03-17:38:47.561 53bc Delete type=2 #161
+2023/12/03-17:38:47.561 53bc Delete type=2 #162
+2023/12/03-17:38:47.562 53bc Delete type=2 #163
+2023/12/03-17:38:47.563 53bc Delete type=2 #164
+2023/12/03-17:38:47.564 53bc Delete type=2 #165
+2023/12/03-17:38:47.564 53bc Delete type=2 #166
+2023/12/03-17:38:47.565 53bc Delete type=2 #167
+2023/12/03-17:38:47.565 53bc Delete type=2 #170
+2023/12/03-17:38:47.565 53bc Delete type=2 #171
+2023/12/03-17:38:47.578 53bc Manual compaction at level-1 from '!folders!aDNBAk4AgCFj7u8L' @ 14627 : 1 .. '!folders!yI6Oms9kqr5W4PD2' @ 0 : 0; will stop at (end)

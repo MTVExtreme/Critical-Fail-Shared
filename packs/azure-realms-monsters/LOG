@@ -1,35 +1,3 @@
-2023/09/26-13:20:52.258 3964 Recovering log #63
-2023/09/26-13:20:52.261 3964 Level-0 table #77: started
-2023/09/26-13:20:52.268 3964 Level-0 table #77: 697917 bytes OK
-2023/09/26-13:20:52.277 3964 Delete type=0 #63
-2023/09/26-13:20:52.278 3964 Delete type=3 #61
-2023/09/26-13:20:52.347 b720 Compacting 1@0 + 0@1 files
-2023/09/26-13:20:52.354 b720 Generated table #79@0: 212 keys, 519763 bytes
-2023/09/26-13:20:52.354 b720 Compacted 1@0 + 0@1 files => 519763 bytes
-2023/09/26-13:20:52.356 b720 compacted to: files[ 0 1 11 0 0 0 0 ]
-2023/09/28-19:38:22.553 b720 Compacting 1@1 + 10@2 files
-2023/09/28-19:38:22.578 b720 Generated table #80@1: 364 keys, 2113002 bytes
-2023/09/28-19:38:22.599 b720 Generated table #81@1: 1039 keys, 2121232 bytes
-2023/09/28-19:38:22.621 b720 Generated table #82@1: 1423 keys, 2125759 bytes
-2023/09/28-19:38:22.642 b720 Generated table #83@1: 1438 keys, 2126436 bytes
-2023/09/28-19:38:22.663 b720 Generated table #84@1: 1445 keys, 2128137 bytes
-2023/09/28-19:38:22.695 b720 Generated table #85@1: 1446 keys, 2126373 bytes
-2023/09/28-19:38:22.723 b720 Generated table #86@1: 1421 keys, 2127494 bytes
-2023/09/28-19:38:22.745 b720 Generated table #87@1: 1420 keys, 2125407 bytes
-2023/09/28-19:38:22.766 b720 Generated table #88@1: 1440 keys, 2127144 bytes
-2023/09/28-19:38:22.789 b720 Generated table #89@1: 1400 keys, 2127768 bytes
-2023/09/28-19:38:22.794 b720 Generated table #90@1: 162 keys, 252573 bytes
-2023/09/28-19:38:22.794 b720 Compacted 1@1 + 10@2 files => 21501325 bytes
-2023/09/28-19:38:22.796 b720 compacted to: files[ 0 0 12 0 0 0 0 ]
-2023/09/28-19:38:22.796 b720 Delete type=2 #65
-2023/09/28-19:38:22.798 b720 Delete type=2 #66
-2023/09/28-19:38:22.800 b720 Delete type=2 #67
-2023/09/28-19:38:22.802 b720 Delete type=2 #68
-2023/09/28-19:38:22.802 b720 Delete type=2 #69
-2023/09/28-19:38:22.803 b720 Delete type=2 #70
-2023/09/28-19:38:22.803 b720 Delete type=2 #71
-2023/09/28-19:38:22.804 b720 Delete type=2 #72
-2023/09/28-19:38:22.804 b720 Delete type=2 #73
-2023/09/28-19:38:22.805 b720 Delete type=2 #74
-2023/09/28-19:38:22.805 b720 Delete type=2 #77
-2023/09/28-19:38:22.806 b720 Delete type=2 #79
+2023/12/03-17:40:35.188 3670 Recovering log #168
+2023/12/03-17:40:35.195 3670 Delete type=0 #168
+2023/12/03-17:40:35.196 3670 Delete type=3 #157

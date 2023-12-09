@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.4] - 2023-12-9
+
+- Added Azure Realms Roll Tables
+- Updated Card Decks again to lastest version of Critical Fail PF1e Cards
+- Added/Updated some monsters. (Thanks VampiricDarkDragon!)
+
 ## [1.1.3] - 2023-10-1
 
 - Updated Card Decks to lastest version of Critical Fail PF1e Cards
