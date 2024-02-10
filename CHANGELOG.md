@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.6] - 2024-02-10
+
+- Added/Updated some monsters. (Thanks VampiricDarkDragon!)
+
+
 ## [1.1.5] - 2023-12-9
 
 - Fixed Duplicated Cards
