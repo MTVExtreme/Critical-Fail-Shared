@@ -2,7 +2,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across our universe",
   "author": "MTVExtreme",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "authors": [
     {
       "name": "MTVExtreme",
@@ -32,7 +32,7 @@
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/latest/download/module.json",
-  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v1.1.6/module.zip",
+  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v1.1.7/module.zip",
   "readme": "https://raw.githubusercontent.com/MTVExtreme/Critical-Fail-Shared/main/README.md",
   "changelog": "https://raw.githubusercontent.com/MTVExtreme/Critical-Fail-Shared/main/CHANGELOG.md",
   "packs": [
@@ -61,10 +61,10 @@
       }
     },
     {
-      "name": "azure-realm-sheets",
+      "name": "azure-realms-sheets",
       "label": "Azure Realms Sheets",
       "system": "pf1",
-      "path": "packs/azure-realm-sheets",
+      "path": "packs/azure-realms-sheets",
       "type": "Actor",
       "flags": {},
       "ownership": {
