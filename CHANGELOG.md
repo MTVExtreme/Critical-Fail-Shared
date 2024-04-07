@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.8] - 2024-04-07
+
+- Added/Updated some monsters? (Thanks VampiricDarkDragon!)
+- Fixed Azure Realms Sheets
+- Renamed Treehorn to Alrune
+
+
 ## [1.1.6] - 2024-02-10
 
 - Added/Updated some monsters. (Thanks VampiricDarkDragon!)
