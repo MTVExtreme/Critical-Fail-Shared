@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.9] - 2024-04-20
+
+- Added Some Fungal Monster (Thanks VampiricDarkDragon!)
+
+
 ## [1.1.8] - 2024-04-07
 
 - Added/Updated some monsters? (Thanks VampiricDarkDragon!)
