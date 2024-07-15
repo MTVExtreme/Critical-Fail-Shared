@@ -1,25 +1,3 @@
-2024/04/11-14:24:10.493 2c10 Recovering log #124
-2024/04/11-14:24:10.494 2c10 Level-0 table #126: started
-2024/04/11-14:24:10.497 2c10 Level-0 table #126: 55475 bytes OK
-2024/04/11-14:24:10.506 2c10 Delete type=0 #112
-2024/04/11-14:24:10.506 2c10 Delete type=0 #124
-2024/04/11-14:24:10.506 2c10 Delete type=3 #111
-2024/04/11-14:24:10.506 2c10 Delete type=3 #123
-2024/04/14-11:05:48.584 d5e0 Level-0 table #129: started
-2024/04/14-11:05:48.584 d5e0 Level-0 table #129: 0 bytes OK
-2024/04/14-11:05:48.592 d5e0 Delete type=0 #127
-2024/04/14-11:05:48.673 d5e0 Manual compaction at level-0 from '!folders!6SnF7Otu1EFMhCMC' @ 72057594037927935 : 1 .. '!items!zjFDUoLX5l7h2Llv' @ 0 : 0; will stop at '!items!ysFs5KCjlciNGTTb' @ 507 : 1
-2024/04/14-11:05:48.673 d5e0 Compacting 1@0 + 0@1 files
-2024/04/14-11:05:48.678 d5e0 Generated table #130@0: 19 keys, 53083 bytes
-2024/04/14-11:05:48.678 d5e0 Compacted 1@0 + 0@1 files => 53083 bytes
-2024/04/14-11:05:48.681 d5e0 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/04/14-11:05:48.681 d5e0 Delete type=2 #126
-2024/04/14-11:05:48.689 d5e0 Manual compaction at level-0 from '!items!ysFs5KCjlciNGTTb' @ 507 : 1 .. '!items!zjFDUoLX5l7h2Llv' @ 0 : 0; will stop at (end)
-2024/04/14-11:05:48.694 d5e0 Manual compaction at level-1 from '!folders!6SnF7Otu1EFMhCMC' @ 72057594037927935 : 1 .. '!items!zjFDUoLX5l7h2Llv' @ 0 : 0; will stop at '!items!ysFs5KCjlciNGTTb' @ 507 : 1
-2024/04/14-11:05:48.694 d5e0 Compacting 1@1 + 1@2 files
-2024/04/14-11:05:48.701 d5e0 Generated table #131@1: 255 keys, 544767 bytes
-2024/04/14-11:05:48.701 d5e0 Compacted 1@1 + 1@2 files => 544767 bytes
-2024/04/14-11:05:48.704 d5e0 compacted to: files[ 0 0 1 0 0 0 0 ]
-2024/04/14-11:05:48.705 d5e0 Delete type=2 #24
-2024/04/14-11:05:48.705 d5e0 Delete type=2 #130
-2024/04/14-11:05:48.713 d5e0 Manual compaction at level-1 from '!items!ysFs5KCjlciNGTTb' @ 507 : 1 .. '!items!zjFDUoLX5l7h2Llv' @ 0 : 0; will stop at (end)
+2024/07/15-14:44:01.945 4704 Recovering log #170
+2024/07/15-14:44:01.953 4704 Delete type=0 #170
+2024/07/15-14:44:01.953 4704 Delete type=3 #168

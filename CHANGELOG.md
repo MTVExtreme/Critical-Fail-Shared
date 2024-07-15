@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+
+## [1.1.10] - 2024-07-15
+
+- Added more Monsters (Thanks VampiricDarkDragon!)
+- Updated to PF12 10.4
+
+
 ## [1.1.9] - 2024-04-20
 
 - Added Some Fungal Monster (Thanks VampiricDarkDragon!)
