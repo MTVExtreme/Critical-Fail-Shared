@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.11] - 2024-07-15
+
+- Fixed missing monster images
 
 ## [1.1.10] - 2024-07-15
 
