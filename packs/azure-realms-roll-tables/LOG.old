@@ -1,3 +1,5 @@
-2024/07/15-14:44:02.413 4704 Recovering log #84
-2024/07/15-14:44:02.420 4704 Delete type=0 #84
-2024/07/15-14:44:02.420 4704 Delete type=3 #82
+2025/02/05-11:35:43.591 17c Log #89: 0 ops saved to Table #90 OK
+2025/02/05-11:35:43.591 17c Archiving H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-roll-tables/000089.log: OK
+2025/02/05-11:35:43.591 17c Table #25: 11 entries OK
+2025/02/05-11:35:43.595 17c Archiving H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-roll-tables/MANIFEST-000088: OK
+2025/02/05-11:35:43.600 17c **** Repaired leveldb H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-roll-tables; recovered 1 files; 1798 bytes. Some data may have been lost. ****

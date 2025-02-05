@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-02-05
+
+- Updated to Foundry V12 and Pathfinder 1e Verison 11.0
+
 ## [1.1.11] - 2024-07-15
 
 - HOTFIX: Fixed missing monster images

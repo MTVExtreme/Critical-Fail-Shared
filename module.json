@@ -2,7 +2,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across our universe",
   "author": "MTVExtreme",
-  "version": "1.1.11",
+  "version": "1.2.0",
   "authors": [
     {
       "name": "MTVExtreme",
@@ -32,7 +32,7 @@
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/latest/download/module.json",
-  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v1.1.11/module.zip",
+  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v1.2.0/module.zip",
   "readme": "https://raw.githubusercontent.com/MTVExtreme/Critical-Fail-Shared/main/README.md",
   "changelog": "https://raw.githubusercontent.com/MTVExtreme/Critical-Fail-Shared/main/CHANGELOG.md",
   "packs": [
@@ -103,16 +103,17 @@
         "id": "pf1",
         "type": "system",
         "compatibility": {
-          "minimum": "9.0",
-          "verified": "10.4"
+          "minimum": "11.0",
+          "verified": "11.0"
         }
       }
     ]
   },
-  "minimumSystemVersion": "9.0",
+  "minimumSystemVersion": "11.0",
   "id": "critical-fail-shared",
   "compatibility": {
-    "minimum": "11",
-    "verified": "11"
+    "minimum": "12",
+    "verified": "12",
+    "maximum":  "13"
   }
 }

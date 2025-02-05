@@ -1,6 +1,37 @@
-2024/07/15-14:44:02.128 4704 Recovering log #148
-2024/07/15-14:44:02.134 4704 Delete type=0 #148
-2024/07/15-14:44:02.134 4704 Delete type=3 #146
-2024/07/15-14:47:56.975 ac1c Level-0 table #154: started
-2024/07/15-14:47:57.501 ac1c Level-0 table #154: 66196672 bytes OK
-2024/07/15-14:47:57.509 ac1c Delete type=0 #152
+2025/02/05-11:35:43.614 a9a0 Log #157: 0 ops saved to Table #158 OK
+2025/02/05-11:35:43.615 a9a0 Archiving H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-sheets/000157.log: OK
+2025/02/05-11:35:43.621 a9a0 Table #29: 1347 entries OK
+2025/02/05-11:35:43.627 a9a0 Table #30: 1425 entries OK
+2025/02/05-11:35:43.632 a9a0 Table #31: 1329 entries OK
+2025/02/05-11:35:43.637 a9a0 Table #32: 1398 entries OK
+2025/02/05-11:35:43.641 a9a0 Table #33: 1372 entries OK
+2025/02/05-11:35:43.644 a9a0 Table #34: 1381 entries OK
+2025/02/05-11:35:43.648 a9a0 Table #35: 1362 entries OK
+2025/02/05-11:35:43.651 a9a0 Table #36: 1345 entries OK
+2025/02/05-11:35:43.655 a9a0 Table #37: 1375 entries OK
+2025/02/05-11:35:43.658 a9a0 Table #38: 1270 entries OK
+2025/02/05-11:35:43.662 a9a0 Table #39: 1419 entries OK
+2025/02/05-11:35:43.666 a9a0 Table #92: 347 entries OK
+2025/02/05-11:35:43.669 a9a0 Table #93: 342 entries OK
+2025/02/05-11:35:43.673 a9a0 Table #95: 2009 entries OK
+2025/02/05-11:35:43.677 a9a0 Table #96: 1320 entries OK
+2025/02/05-11:35:43.681 a9a0 Table #97: 1389 entries OK
+2025/02/05-11:35:43.684 a9a0 Table #98: 1380 entries OK
+2025/02/05-11:35:43.689 a9a0 Table #99: 1302 entries OK
+2025/02/05-11:35:43.693 a9a0 Table #100: 1328 entries OK
+2025/02/05-11:35:43.697 a9a0 Table #101: 1341 entries OK
+2025/02/05-11:35:43.701 a9a0 Table #102: 1373 entries OK
+2025/02/05-11:35:43.704 a9a0 Table #103: 1282 entries OK
+2025/02/05-11:35:43.708 a9a0 Table #104: 1343 entries OK
+2025/02/05-11:35:43.711 a9a0 Table #105: 1327 entries OK
+2025/02/05-11:35:43.715 a9a0 Table #106: 1357 entries OK
+2025/02/05-11:35:43.718 a9a0 Table #107: 1446 entries OK
+2025/02/05-11:35:43.722 a9a0 Table #108: 1304 entries OK
+2025/02/05-11:35:43.726 a9a0 Table #109: 1368 entries OK
+2025/02/05-11:35:43.729 a9a0 Table #110: 1341 entries OK
+2025/02/05-11:35:43.729 a9a0 Table #111: 3 entries OK
+2025/02/05-11:35:43.732 a9a0 Table #150: 343 entries OK
+2025/02/05-11:35:43.839 a9a0 Table #154: 38139 entries OK
+2025/02/05-11:35:43.946 a9a0 Table #156: 38136 entries OK
+2025/02/05-11:35:43.949 a9a0 Archiving H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-sheets/MANIFEST-000155: OK
+2025/02/05-11:35:43.953 a9a0 **** Repaired leveldb H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-sheets; recovered 33 files; 195796670 bytes. Some data may have been lost. ****

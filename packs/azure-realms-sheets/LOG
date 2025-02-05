@@ -1,5 +1,99 @@
-2024/07/15-15:09:11.897 5b18 Recovering log #153
-2024/07/15-15:09:12.125 5b18 Level-0 table #156: started
-2024/07/15-15:09:12.601 5b18 Level-0 table #156: 65890286 bytes OK
-2024/07/15-15:09:12.634 5b18 Delete type=0 #153
-2024/07/15-15:09:12.640 5b18 Delete type=3 #151
+2025/02/05-11:35:43.961 a9a0 Delete type=3 #1
+2025/02/05-11:35:43.961 9ad4 Compacting 33@0 + 0@1 files
+2025/02/05-11:35:43.992 9ad4 Generated table #161@0: 346 keys, 2115834 bytes
+2025/02/05-11:35:44.019 9ad4 Generated table #162@0: 341 keys, 2114507 bytes
+2025/02/05-11:35:44.046 9ad4 Generated table #163@0: 343 keys, 2114976 bytes
+2025/02/05-11:35:44.077 9ad4 Generated table #164@0: 1975 keys, 2124716 bytes
+2025/02/05-11:35:44.106 9ad4 Generated table #165@0: 1281 keys, 2124856 bytes
+2025/02/05-11:35:44.135 9ad4 Generated table #166@0: 1324 keys, 2125542 bytes
+2025/02/05-11:35:44.165 9ad4 Generated table #167@0: 1308 keys, 2125666 bytes
+2025/02/05-11:35:44.195 9ad4 Generated table #168@0: 1290 keys, 2125117 bytes
+2025/02/05-11:35:44.226 9ad4 Generated table #169@0: 1276 keys, 2123818 bytes
+2025/02/05-11:35:44.256 9ad4 Generated table #170@0: 1245 keys, 2127182 bytes
+2025/02/05-11:35:44.287 9ad4 Generated table #171@0: 1372 keys, 2125323 bytes
+2025/02/05-11:35:44.316 9ad4 Generated table #172@0: 1240 keys, 2125004 bytes
+2025/02/05-11:35:44.344 9ad4 Generated table #173@0: 1276 keys, 2125773 bytes
+2025/02/05-11:35:44.374 9ad4 Generated table #174@0: 1270 keys, 2123187 bytes
+2025/02/05-11:35:44.403 9ad4 Generated table #175@0: 1283 keys, 2125118 bytes
+2025/02/05-11:35:44.432 9ad4 Generated table #176@0: 1425 keys, 2132747 bytes
+2025/02/05-11:35:44.461 9ad4 Generated table #177@0: 1266 keys, 2128955 bytes
+2025/02/05-11:35:44.491 9ad4 Generated table #178@0: 1317 keys, 2141642 bytes
+2025/02/05-11:35:44.521 9ad4 Generated table #179@0: 1288 keys, 2125113 bytes
+2025/02/05-11:35:44.551 9ad4 Generated table #180@0: 1303 keys, 2126230 bytes
+2025/02/05-11:35:44.580 9ad4 Generated table #181@0: 1367 keys, 2125852 bytes
+2025/02/05-11:35:44.608 9ad4 Generated table #182@0: 1320 keys, 2124980 bytes
+2025/02/05-11:35:44.637 9ad4 Generated table #183@0: 1260 keys, 2123590 bytes
+2025/02/05-11:35:44.666 9ad4 Generated table #184@0: 1337 keys, 2126028 bytes
+2025/02/05-11:35:44.696 9ad4 Generated table #185@0: 1303 keys, 2125591 bytes
+2025/02/05-11:35:44.801 9ad4 Generated table #186@0: 1367 keys, 2124914 bytes
+2025/02/05-11:35:44.840 9ad4 Generated table #187@0: 1278 keys, 2124062 bytes
+2025/02/05-11:35:44.873 9ad4 Generated table #188@0: 1309 keys, 2126128 bytes
+2025/02/05-11:35:44.903 9ad4 Generated table #189@0: 1303 keys, 2124528 bytes
+2025/02/05-11:35:44.932 9ad4 Generated table #190@0: 1227 keys, 2124117 bytes
+2025/02/05-11:35:44.962 9ad4 Generated table #191@0: 1262 keys, 2126404 bytes
+2025/02/05-11:35:44.965 9ad4 Generated table #192@0: 166 keys, 57082 bytes
+2025/02/05-11:35:44.965 9ad4 Compacted 33@0 + 0@1 files => 65934582 bytes
+2025/02/05-11:35:44.967 9ad4 compacted to: files[ 0 32 0 0 0 0 0 ]
+2025/02/05-11:35:44.967 9ad4 Delete type=2 #29
+2025/02/05-11:35:44.967 9ad4 Delete type=2 #30
+2025/02/05-11:35:44.967 9ad4 Delete type=2 #31
+2025/02/05-11:35:44.968 9ad4 Delete type=2 #32
+2025/02/05-11:35:44.968 9ad4 Delete type=2 #33
+2025/02/05-11:35:44.968 9ad4 Delete type=2 #34
+2025/02/05-11:35:44.968 9ad4 Delete type=2 #35
+2025/02/05-11:35:44.968 9ad4 Delete type=2 #36
+2025/02/05-11:35:44.968 9ad4 Delete type=2 #37
+2025/02/05-11:35:44.969 9ad4 Delete type=2 #38
+2025/02/05-11:35:44.969 9ad4 Delete type=2 #39
+2025/02/05-11:35:44.969 9ad4 Delete type=2 #92
+2025/02/05-11:35:44.969 9ad4 Delete type=2 #93
+2025/02/05-11:35:44.969 9ad4 Delete type=2 #95
+2025/02/05-11:35:44.969 9ad4 Delete type=2 #96
+2025/02/05-11:35:44.969 9ad4 Delete type=2 #97
+2025/02/05-11:35:44.970 9ad4 Delete type=2 #98
+2025/02/05-11:35:44.970 9ad4 Delete type=2 #99
+2025/02/05-11:35:44.970 9ad4 Delete type=2 #100
+2025/02/05-11:35:44.970 9ad4 Delete type=2 #101
+2025/02/05-11:35:44.970 9ad4 Delete type=2 #102
+2025/02/05-11:35:44.970 9ad4 Delete type=2 #103
+2025/02/05-11:35:44.970 9ad4 Delete type=2 #104
+2025/02/05-11:35:44.971 9ad4 Delete type=2 #105
+2025/02/05-11:35:44.971 9ad4 Delete type=2 #106
+2025/02/05-11:35:44.971 9ad4 Delete type=2 #107
+2025/02/05-11:35:44.971 9ad4 Delete type=2 #108
+2025/02/05-11:35:44.971 9ad4 Delete type=2 #109
+2025/02/05-11:35:44.971 9ad4 Delete type=2 #110
+2025/02/05-11:35:44.972 9ad4 Delete type=2 #111
+2025/02/05-11:35:44.972 9ad4 Delete type=2 #150
+2025/02/05-11:35:44.972 9ad4 Delete type=2 #154
+2025/02/05-11:35:44.975 9ad4 Delete type=2 #156
+2025/02/05-11:35:44.980 9ad4 Moved #161 to level-2 2115834 bytes OK: files[ 0 31 1 0 0 0 0 ]
+2025/02/05-11:35:44.981 9ad4 Moved #162 to level-2 2114507 bytes OK: files[ 0 30 2 0 0 0 0 ]
+2025/02/05-11:35:44.983 9ad4 Moved #163 to level-2 2114976 bytes OK: files[ 0 29 3 0 0 0 0 ]
+2025/02/05-11:35:44.985 9ad4 Moved #164 to level-2 2124716 bytes OK: files[ 0 28 4 0 0 0 0 ]
+2025/02/05-11:35:44.987 9ad4 Moved #165 to level-2 2124856 bytes OK: files[ 0 27 5 0 0 0 0 ]
+2025/02/05-11:35:44.989 9ad4 Moved #166 to level-2 2125542 bytes OK: files[ 0 26 6 0 0 0 0 ]
+2025/02/05-11:35:44.991 9ad4 Moved #167 to level-2 2125666 bytes OK: files[ 0 25 7 0 0 0 0 ]
+2025/02/05-11:35:44.993 9ad4 Moved #168 to level-2 2125117 bytes OK: files[ 0 24 8 0 0 0 0 ]
+2025/02/05-11:35:44.994 9ad4 Moved #169 to level-2 2123818 bytes OK: files[ 0 23 9 0 0 0 0 ]
+2025/02/05-11:35:44.996 9ad4 Moved #170 to level-2 2127182 bytes OK: files[ 0 22 10 0 0 0 0 ]
+2025/02/05-11:35:44.998 9ad4 Moved #171 to level-2 2125323 bytes OK: files[ 0 21 11 0 0 0 0 ]
+2025/02/05-11:35:45.000 9ad4 Moved #172 to level-2 2125004 bytes OK: files[ 0 20 12 0 0 0 0 ]
+2025/02/05-11:35:45.002 9ad4 Moved #173 to level-2 2125773 bytes OK: files[ 0 19 13 0 0 0 0 ]
+2025/02/05-11:35:45.004 9ad4 Moved #174 to level-2 2123187 bytes OK: files[ 0 18 14 0 0 0 0 ]
+2025/02/05-11:35:45.005 9ad4 Moved #175 to level-2 2125118 bytes OK: files[ 0 17 15 0 0 0 0 ]
+2025/02/05-11:35:45.007 9ad4 Moved #176 to level-2 2132747 bytes OK: files[ 0 16 16 0 0 0 0 ]
+2025/02/05-11:35:45.009 9ad4 Moved #177 to level-2 2128955 bytes OK: files[ 0 15 17 0 0 0 0 ]
+2025/02/05-11:35:45.011 9ad4 Moved #178 to level-2 2141642 bytes OK: files[ 0 14 18 0 0 0 0 ]
+2025/02/05-11:35:45.013 9ad4 Moved #179 to level-2 2125113 bytes OK: files[ 0 13 19 0 0 0 0 ]
+2025/02/05-11:35:45.014 9ad4 Moved #180 to level-2 2126230 bytes OK: files[ 0 12 20 0 0 0 0 ]
+2025/02/05-11:35:45.016 9ad4 Moved #181 to level-2 2125852 bytes OK: files[ 0 11 21 0 0 0 0 ]
+2025/02/05-11:35:45.018 9ad4 Moved #182 to level-2 2124980 bytes OK: files[ 0 10 22 0 0 0 0 ]
+2025/02/05-11:35:45.020 9ad4 Moved #183 to level-2 2123590 bytes OK: files[ 0 9 23 0 0 0 0 ]
+2025/02/05-11:35:45.022 9ad4 Moved #184 to level-2 2126028 bytes OK: files[ 0 8 24 0 0 0 0 ]
+2025/02/05-11:35:45.024 9ad4 Moved #185 to level-2 2125591 bytes OK: files[ 0 7 25 0 0 0 0 ]
+2025/02/05-11:35:45.025 9ad4 Moved #186 to level-2 2124914 bytes OK: files[ 0 6 26 0 0 0 0 ]
+2025/02/05-11:35:45.027 9ad4 Moved #187 to level-2 2124062 bytes OK: files[ 0 5 27 0 0 0 0 ]
+2025/02/05-11:54:53.347 9ad4 Level-0 table #194: started
+2025/02/05-11:54:53.884 9ad4 Level-0 table #194: 69725568 bytes OK
+2025/02/05-11:54:53.888 9ad4 Delete type=0 #160

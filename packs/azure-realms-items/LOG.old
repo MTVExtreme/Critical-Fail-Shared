@@ -1,3 +1,6 @@
-2024/07/15-14:44:01.945 4704 Recovering log #170
-2024/07/15-14:44:01.953 4704 Delete type=0 #170
-2024/07/15-14:44:01.953 4704 Delete type=3 #168
+2025/02/05-11:35:44.676 7b58 Log #176: 0 ops saved to Table #177 OK
+2025/02/05-11:35:44.676 7b58 Archiving H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-items/000176.log: OK
+2025/02/05-11:35:44.677 7b58 Table #133: 255 entries OK
+2025/02/05-11:35:44.679 7b58 Table #175: 454 entries OK
+2025/02/05-11:35:44.683 7b58 Archiving H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-items/MANIFEST-000174: OK
+2025/02/05-11:35:44.688 7b58 **** Repaired leveldb H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-items; recovered 2 files; 1612764 bytes. Some data may have been lost. ****
