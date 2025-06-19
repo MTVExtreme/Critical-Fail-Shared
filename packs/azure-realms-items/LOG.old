@@ -1,6 +1,21 @@
-2025/02/05-11:35:44.676 7b58 Log #176: 0 ops saved to Table #177 OK
-2025/02/05-11:35:44.676 7b58 Archiving H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-items/000176.log: OK
-2025/02/05-11:35:44.677 7b58 Table #133: 255 entries OK
-2025/02/05-11:35:44.679 7b58 Table #175: 454 entries OK
-2025/02/05-11:35:44.683 7b58 Archiving H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-items/MANIFEST-000174: OK
-2025/02/05-11:35:44.688 7b58 **** Repaired leveldb H:\Foundry 2\Hyamda - 29998\data\Data\modules\critical-fail-shared\packs\azure-realms-items; recovered 2 files; 1612764 bytes. Some data may have been lost. ****
+2025/06/19-13:51:26.697 691c Recovering log #209
+2025/06/19-13:51:26.705 691c Delete type=0 #209
+2025/06/19-13:51:26.705 691c Delete type=3 #207
+2025/06/19-13:59:05.700 a5f4 Level-0 table #213: started
+2025/06/19-13:59:05.700 a5f4 Level-0 table #213: 0 bytes OK
+2025/06/19-13:59:05.704 a5f4 Delete type=0 #211
+2025/06/19-13:59:05.706 a5f4 Manual compaction at level-0 from '!folders!6SnF7Otu1EFMhCMC' @ 72057594037927935 : 1 .. '!items!zjFDUoLX5l7h2Llv' @ 0 : 0; will stop at '!items!zjFDUoLX5l7h2Llv' @ 1188 : 1
+2025/06/19-13:59:05.706 a5f4 Compacting 1@0 + 0@1 files
+2025/06/19-13:59:05.714 a5f4 Generated table #214@0: 227 keys, 569601 bytes
+2025/06/19-13:59:05.714 a5f4 Compacted 1@0 + 0@1 files => 569601 bytes
+2025/06/19-13:59:05.718 a5f4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/19-13:59:05.718 a5f4 Delete type=2 #208
+2025/06/19-13:59:05.763 a5f4 Manual compaction at level-0 from '!items!zjFDUoLX5l7h2Llv' @ 1188 : 1 .. '!items!zjFDUoLX5l7h2Llv' @ 0 : 0; will stop at (end)
+2025/06/19-13:59:05.850 a5f4 Manual compaction at level-1 from '!folders!6SnF7Otu1EFMhCMC' @ 72057594037927935 : 1 .. '!items!zjFDUoLX5l7h2Llv' @ 0 : 0; will stop at '!items!zjFDUoLX5l7h2Llv' @ 1415 : 1
+2025/06/19-13:59:05.850 a5f4 Compacting 1@1 + 1@2 files
+2025/06/19-13:59:05.859 a5f4 Generated table #215@1: 255 keys, 572338 bytes
+2025/06/19-13:59:05.859 a5f4 Compacted 1@1 + 1@2 files => 572338 bytes
+2025/06/19-13:59:05.863 a5f4 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/06/19-13:59:05.863 a5f4 Delete type=2 #184
+2025/06/19-13:59:05.863 a5f4 Delete type=2 #214
+2025/06/19-13:59:05.909 a5f4 Manual compaction at level-1 from '!items!zjFDUoLX5l7h2Llv' @ 1415 : 1 .. '!items!zjFDUoLX5l7h2Llv' @ 0 : 0; will stop at (end)
