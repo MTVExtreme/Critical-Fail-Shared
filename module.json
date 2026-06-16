@@ -104,7 +104,7 @@
         "type": "system",
         "compatibility": {
           "minimum": "11.0",
-          "verified": "11.7"
+          "verified": "11.11"
         }
       }
     ]
