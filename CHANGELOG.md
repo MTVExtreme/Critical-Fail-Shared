@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2026-06-16
+
+- Fixed Many many errors still thrown on monsters. (Thanks Vamp!)
+- Updated to Foundry V13 and Pathfinder 1e Verison 11.11
+- Monsters still here for now.
+
 ## [1.2.1] - 2025-06-19
 
 - Fixed the edit item issue on monsters
