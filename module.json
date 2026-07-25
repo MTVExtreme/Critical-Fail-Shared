@@ -2,7 +2,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across our universe",
   "author": "MTVExtreme",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "authors": [
     {
       "name": "MTVExtreme",
@@ -115,5 +115,8 @@
     "minimum": "12",
     "verified": "13",
     "maximum":  "13"
-  }
+  },
+  "flags": {
+		"canUpload": true
+	}
 }

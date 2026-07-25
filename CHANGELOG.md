@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.2] - 2026-07-25
+
+- Added more new monsters and updated statblocks. (Thanks Vamp!)
+
+## [1.3.1] - 2026-07-01
+
+- Added a few new monsters and updated statblocks. (Thanks Vamp!)
+
 ## [1.3.0] - 2026-06-16
 
 - Fixed Many many errors still thrown on monsters. (Thanks Vamp!)
@@ -13,7 +21,7 @@ All notable changes to this project will be documented in this file.
 - Fixed the edit item issue on monsters
 - Many many errors still thrown on monsters, don't have a solution at this time.
 - Migrated to PF version 11.7
-- This will be the last update that the monsters and sheets will be included in this pack. Will move the actors to a new module.
+- This will be the last update that the monsters and sheets will be included in this pack. Will move the actors to a new module. (this was a lie)
 
 ## [1.2.0] - 2025-02-05
 
