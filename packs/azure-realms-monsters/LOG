@@ -1,53 +1,121 @@
-2026/08/19-11:01:18.038 32b8 Recovering log #1933
-2026/08/19-11:01:18.042 32b8 Level-0 table #1943: started
-2026/08/19-11:01:18.052 32b8 Level-0 table #1943: 1221941 bytes OK
-2026/08/19-11:01:18.059 32b8 Delete type=0 #1933
-2026/08/19-11:01:18.059 32b8 Delete type=3 #1931
-2026/08/19-11:01:18.127 7c98 Compacting 1@0 + 0@1 files
-2026/08/19-11:01:18.136 7c98 Generated table #1945@0: 127 keys, 476809 bytes
-2026/08/19-11:01:18.141 7c98 Generated table #1946@0: 99 keys, 129771 bytes
-2026/08/19-11:01:18.141 7c98 Compacted 1@0 + 0@1 files => 606580 bytes
-2026/08/19-11:01:18.143 7c98 compacted to: files[ 0 2 22 0 0 0 0 ]
-2026/08/19-11:01:21.817 7c98 Compacting 1@1 + 11@2 files
-2026/08/19-11:01:21.838 7c98 Generated table #1947@1: 339 keys, 2115402 bytes
-2026/08/19-11:01:21.859 7c98 Generated table #1948@1: 340 keys, 2115124 bytes
-2026/08/19-11:01:21.880 7c98 Generated table #1949@1: 691 keys, 2116882 bytes
-2026/08/19-11:01:21.903 7c98 Generated table #1950@1: 1395 keys, 2129161 bytes
-2026/08/19-11:01:21.927 7c98 Generated table #1951@1: 1378 keys, 2125404 bytes
-2026/08/19-11:01:21.951 7c98 Generated table #1952@1: 1392 keys, 2126606 bytes
-2026/08/19-11:01:21.975 7c98 Generated table #1953@1: 1374 keys, 2125136 bytes
-2026/08/19-11:01:21.999 7c98 Generated table #1954@1: 1406 keys, 2125552 bytes
-2026/08/19-11:01:22.021 7c98 Generated table #1955@1: 1388 keys, 2125318 bytes
-2026/08/19-11:01:22.046 7c98 Generated table #1956@1: 1372 keys, 2127262 bytes
-2026/08/19-11:01:22.050 7c98 Generated table #1957@1: 57 keys, 98006 bytes
-2026/08/19-11:01:22.050 7c98 Compacted 1@1 + 11@2 files => 21329853 bytes
-2026/08/19-11:01:22.052 7c98 compacted to: files[ 0 1 22 0 0 0 0 ]
-2026/08/19-11:01:22.052 7c98 Delete type=2 #1943
-2026/08/19-11:01:22.158 7c98 Compacting 1@1 + 6@2 files
-2026/08/19-11:01:22.181 7c98 Generated table #1958@1: 1371 keys, 2124155 bytes
-2026/08/19-11:01:22.204 7c98 Generated table #1959@1: 1418 keys, 2126404 bytes
-2026/08/19-11:01:22.227 7c98 Generated table #1960@1: 1391 keys, 2128469 bytes
-2026/08/19-11:01:22.251 7c98 Generated table #1961@1: 1417 keys, 2125242 bytes
-2026/08/19-11:01:22.274 7c98 Generated table #1962@1: 1377 keys, 2125588 bytes
-2026/08/19-11:01:22.289 7c98 Generated table #1963@1: 937 keys, 1191395 bytes
-2026/08/19-11:01:22.289 7c98 Compacted 1@1 + 6@2 files => 11821253 bytes
-2026/08/19-11:01:22.291 7c98 compacted to: files[ 0 0 22 0 0 0 0 ]
-2026/08/19-11:01:22.291 7c98 Delete type=2 #1896
-2026/08/19-11:01:22.292 7c98 Delete type=2 #1897
-2026/08/19-11:01:22.293 7c98 Delete type=2 #1898
-2026/08/19-11:01:22.294 7c98 Delete type=2 #1899
-2026/08/19-11:01:22.294 7c98 Delete type=2 #1900
-2026/08/19-11:01:22.295 7c98 Delete type=2 #1901
-2026/08/19-11:01:22.295 7c98 Delete type=2 #1902
-2026/08/19-11:01:22.296 7c98 Delete type=2 #1907
-2026/08/19-11:01:22.297 7c98 Delete type=2 #1908
-2026/08/19-11:01:22.297 7c98 Delete type=2 #1909
-2026/08/19-11:01:22.298 7c98 Delete type=2 #1910
-2026/08/19-11:01:22.299 7c98 Delete type=2 #1936
-2026/08/19-11:01:22.299 7c98 Delete type=2 #1937
-2026/08/19-11:01:22.300 7c98 Delete type=2 #1938
-2026/08/19-11:01:22.300 7c98 Delete type=2 #1939
-2026/08/19-11:01:22.301 7c98 Delete type=2 #1940
-2026/08/19-11:01:22.301 7c98 Delete type=2 #1941
-2026/08/19-11:01:22.301 7c98 Delete type=2 #1945
-2026/08/19-11:01:22.301 7c98 Delete type=2 #1946
+2026/08/28-18:50:34.014 cd04 Recovering log #1968
+2026/08/28-18:50:34.022 cd04 Level-0 table #1983: started
+2026/08/28-18:50:34.040 cd04 Level-0 table #1983: 1731567 bytes OK
+2026/08/28-18:50:34.047 cd04 Delete type=0 #1968
+2026/08/28-18:50:34.048 cd04 Delete type=3 #1966
+2026/08/28-18:50:34.125 cd40 Compacting 1@0 + 0@1 files
+2026/08/28-18:50:34.137 cd40 Generated table #1985@0: 335 keys, 1029424 bytes
+2026/08/28-18:50:34.144 cd40 Generated table #1986@0: 131 keys, 179039 bytes
+2026/08/28-18:50:34.144 cd40 Compacted 1@0 + 0@1 files => 1208463 bytes
+2026/08/28-18:50:34.146 cd40 compacted to: files[ 0 2 24 0 0 0 0 ]
+2026/08/28-18:50:37.917 cd40 Compacting 1@1 + 11@2 files
+2026/08/28-18:50:37.939 cd40 Generated table #1987@1: 339 keys, 2112698 bytes
+2026/08/28-18:50:37.961 cd40 Generated table #1988@1: 341 keys, 2115802 bytes
+2026/08/28-18:50:37.986 cd40 Generated table #1989@1: 637 keys, 2117735 bytes
+2026/08/28-18:50:38.011 cd40 Generated table #1990@1: 1402 keys, 2124790 bytes
+2026/08/28-18:50:38.034 cd40 Generated table #1991@1: 1378 keys, 2126262 bytes
+2026/08/28-18:50:38.059 cd40 Generated table #1992@1: 1386 keys, 2124872 bytes
+2026/08/28-18:50:38.086 cd40 Generated table #1993@1: 1376 keys, 2125972 bytes
+2026/08/28-18:50:38.110 cd40 Generated table #1994@1: 1404 keys, 2125071 bytes
+2026/08/28-18:50:38.133 cd40 Generated table #1995@1: 1380 keys, 2125999 bytes
+2026/08/28-18:50:38.160 cd40 Generated table #1996@1: 1400 keys, 2126724 bytes
+2026/08/28-18:50:38.167 cd40 Generated table #1997@1: 255 keys, 405161 bytes
+2026/08/28-18:50:38.167 cd40 Compacted 1@1 + 11@2 files => 21631086 bytes
+2026/08/28-18:50:38.169 cd40 compacted to: files[ 0 1 24 0 0 0 0 ]
+2026/08/28-18:50:38.170 cd40 Delete type=2 #1950
+2026/08/28-18:50:38.171 cd40 Delete type=2 #1951
+2026/08/28-18:50:38.172 cd40 Delete type=2 #1952
+2026/08/28-18:50:38.173 cd40 Delete type=2 #1953
+2026/08/28-18:50:38.174 cd40 Delete type=2 #1954
+2026/08/28-18:50:38.174 cd40 Delete type=2 #1955
+2026/08/28-18:50:38.174 cd40 Delete type=2 #1956
+2026/08/28-18:50:38.175 cd40 Delete type=2 #1978
+2026/08/28-18:50:38.176 cd40 Delete type=2 #1979
+2026/08/28-18:50:38.177 cd40 Delete type=2 #1980
+2026/08/28-18:50:38.178 cd40 Delete type=2 #1981
+2026/08/28-18:50:38.178 cd40 Delete type=2 #1983
+2026/08/28-18:50:38.178 cd40 Delete type=2 #1985
+2026/08/28-18:50:38.207 cd40 Compacting 1@1 + 12@2 files
+2026/08/28-18:50:38.232 cd40 Generated table #1998@1: 1402 keys, 2126356 bytes
+2026/08/28-18:50:38.270 cd40 Generated table #1999@1: 1423 keys, 2126865 bytes
+2026/08/28-18:50:38.297 cd40 Generated table #2000@1: 1381 keys, 2126473 bytes
+2026/08/28-18:50:38.323 cd40 Generated table #2001@1: 1363 keys, 2124344 bytes
+2026/08/28-18:50:38.347 cd40 Generated table #2002@1: 1440 keys, 2126164 bytes
+2026/08/28-18:50:38.372 cd40 Generated table #2003@1: 1371 keys, 2125096 bytes
+2026/08/28-18:50:38.398 cd40 Generated table #2004@1: 1399 keys, 2125532 bytes
+2026/08/28-18:50:38.424 cd40 Generated table #2005@1: 1414 keys, 2127281 bytes
+2026/08/28-18:50:38.450 cd40 Generated table #2006@1: 1360 keys, 2124028 bytes
+2026/08/28-18:50:38.454 cd40 Generated table #2007@1: 202 keys, 37671 bytes
+2026/08/28-18:50:38.454 cd40 Compacted 1@1 + 12@2 files => 19169810 bytes
+2026/08/28-18:50:38.456 cd40 compacted to: files[ 0 0 22 0 0 0 0 ]
+2026/08/28-18:50:38.456 cd40 Delete type=2 #1887
+2026/08/28-18:50:38.456 cd40 Delete type=2 #1903
+2026/08/28-18:50:38.456 cd40 Delete type=2 #1961
+2026/08/28-18:50:38.457 cd40 Delete type=2 #1962
+2026/08/28-18:50:38.458 cd40 Delete type=2 #1963
+2026/08/28-18:50:38.459 cd40 Delete type=2 #1971
+2026/08/28-18:50:38.459 cd40 Delete type=2 #1972
+2026/08/28-18:50:38.460 cd40 Delete type=2 #1973
+2026/08/28-18:50:38.461 cd40 Delete type=2 #1974
+2026/08/28-18:50:38.462 cd40 Delete type=2 #1975
+2026/08/28-18:50:38.463 cd40 Delete type=2 #1976
+2026/08/28-18:50:38.463 cd40 Delete type=2 #1977
+2026/08/28-18:50:38.464 cd40 Delete type=2 #1986
+2026/08/29-17:39:56.601 cd40 Level-0 table #2009: started
+2026/08/29-17:39:56.635 cd40 Level-0 table #2009: 1837704 bytes OK
+2026/08/29-17:39:56.641 cd40 Delete type=0 #1984
+2026/08/29-21:56:34.608 cd40 Compacting 1@0 + 0@1 files
+2026/08/29-21:56:34.623 cd40 Generated table #2010@0: 224 keys, 891394 bytes
+2026/08/29-21:56:34.628 cd40 Generated table #2011@0: 108 keys, 156990 bytes
+2026/08/29-21:56:34.628 cd40 Compacted 1@0 + 0@1 files => 1048384 bytes
+2026/08/29-21:56:34.630 cd40 compacted to: files[ 0 2 22 0 0 0 0 ]
+2026/08/29-21:56:34.631 cd40 Delete type=2 #2009
+2026/08/29-22:15:05.986 cd40 Compacting 1@1 + 9@2 files
+2026/08/29-22:15:06.018 cd40 Generated table #2012@1: 339 keys, 2112168 bytes
+2026/08/29-22:15:06.042 cd40 Generated table #2013@1: 340 keys, 2117073 bytes
+2026/08/29-22:15:06.068 cd40 Generated table #2014@1: 613 keys, 2115378 bytes
+2026/08/29-22:15:06.102 cd40 Generated table #2015@1: 1403 keys, 2125611 bytes
+2026/08/29-22:15:06.133 cd40 Generated table #2016@1: 1364 keys, 2126174 bytes
+2026/08/29-22:15:06.162 cd40 Generated table #2017@1: 1396 keys, 2125254 bytes
+2026/08/29-22:15:06.192 cd40 Generated table #2018@1: 1369 keys, 2124508 bytes
+2026/08/29-22:15:06.223 cd40 Generated table #2019@1: 1406 keys, 2126403 bytes
+2026/08/29-22:15:06.255 cd40 Generated table #2020@1: 1375 keys, 2125735 bytes
+2026/08/29-22:15:06.263 cd40 Generated table #2021@1: 143 keys, 205922 bytes
+2026/08/29-22:15:06.263 cd40 Compacted 1@1 + 9@2 files => 19304226 bytes
+2026/08/29-22:15:06.265 cd40 compacted to: files[ 0 1 23 0 0 0 0 ]
+2026/08/29-22:15:06.265 cd40 Delete type=2 #1987
+2026/08/29-22:15:06.266 cd40 Delete type=2 #1988
+2026/08/29-22:15:06.266 cd40 Delete type=2 #1989
+2026/08/29-22:15:06.267 cd40 Delete type=2 #1990
+2026/08/29-22:15:06.267 cd40 Delete type=2 #1991
+2026/08/29-22:15:06.267 cd40 Delete type=2 #1992
+2026/08/29-22:15:06.268 cd40 Delete type=2 #1993
+2026/08/29-22:15:06.268 cd40 Delete type=2 #1994
+2026/08/29-22:15:06.269 cd40 Delete type=2 #1995
+2026/08/29-22:15:06.269 cd40 Delete type=2 #2010
+2026/08/29-22:21:23.527 cd40 Compacting 1@1 + 12@2 files
+2026/08/29-22:21:23.563 cd40 Generated table #2022@1: 1384 keys, 2124784 bytes
+2026/08/29-22:21:23.592 cd40 Generated table #2023@1: 1430 keys, 2127134 bytes
+2026/08/29-22:21:23.617 cd40 Generated table #2024@1: 1380 keys, 2124469 bytes
+2026/08/29-22:21:23.643 cd40 Generated table #2025@1: 1365 keys, 2124119 bytes
+2026/08/29-22:21:23.668 cd40 Generated table #2026@1: 1408 keys, 2124843 bytes
+2026/08/29-22:21:23.695 cd40 Generated table #2027@1: 1397 keys, 2126303 bytes
+2026/08/29-22:21:23.724 cd40 Generated table #2028@1: 1386 keys, 2125402 bytes
+2026/08/29-22:21:23.751 cd40 Generated table #2029@1: 1426 keys, 2125116 bytes
+2026/08/29-22:21:23.778 cd40 Generated table #2030@1: 1363 keys, 2126216 bytes
+2026/08/29-22:21:23.790 cd40 Generated table #2031@1: 631 keys, 697840 bytes
+2026/08/29-22:21:23.790 cd40 Compacted 1@1 + 12@2 files => 19826226 bytes
+2026/08/29-22:21:23.792 cd40 compacted to: files[ 0 0 21 0 0 0 0 ]
+2026/08/29-22:21:23.792 cd40 Delete type=2 #1957
+2026/08/29-22:21:23.793 cd40 Delete type=2 #1997
+2026/08/29-22:21:23.793 cd40 Delete type=2 #1998
+2026/08/29-22:21:23.793 cd40 Delete type=2 #1999
+2026/08/29-22:21:23.794 cd40 Delete type=2 #2000
+2026/08/29-22:21:23.794 cd40 Delete type=2 #2001
+2026/08/29-22:21:23.794 cd40 Delete type=2 #2002
+2026/08/29-22:21:23.794 cd40 Delete type=2 #2003
+2026/08/29-22:21:23.795 cd40 Delete type=2 #2004
+2026/08/29-22:21:23.795 cd40 Delete type=2 #2005
+2026/08/29-22:21:23.795 cd40 Delete type=2 #2006
+2026/08/29-22:21:23.796 cd40 Delete type=2 #2007
+2026/08/29-22:21:23.796 cd40 Delete type=2 #2011

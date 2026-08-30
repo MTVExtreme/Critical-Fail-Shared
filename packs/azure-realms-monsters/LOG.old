@@ -1,30 +1,39 @@
-2026/08/16-13:59:04.342 349c Recovering log #1930
-2026/08/16-13:59:04.343 349c Level-0 table #1932: started
-2026/08/16-13:59:04.346 349c Level-0 table #1932: 51037 bytes OK
-2026/08/16-13:59:04.352 349c Delete type=0 #1930
-2026/08/16-13:59:04.353 349c Delete type=3 #1929
-2026/08/16-13:59:04.428 54ec Compacting 1@0 + 0@1 files
-2026/08/16-13:59:04.431 54ec Generated table #1934@0: 3 keys, 16191 bytes
-2026/08/16-13:59:04.435 54ec Generated table #1935@0: 13 keys, 17940 bytes
-2026/08/16-13:59:04.435 54ec Compacted 1@0 + 0@1 files => 34131 bytes
-2026/08/16-13:59:04.437 54ec compacted to: files[ 0 2 21 0 0 0 0 ]
-2026/08/16-13:59:08.545 54ec Compacting 1@1 + 2@2 files
-2026/08/16-13:59:08.568 54ec Generated table #1936@1: 1376 keys, 2126479 bytes
-2026/08/16-13:59:08.582 54ec Generated table #1937@1: 860 keys, 1072001 bytes
-2026/08/16-13:59:08.582 54ec Compacted 1@1 + 2@2 files => 3198480 bytes
-2026/08/16-13:59:08.584 54ec compacted to: files[ 0 1 21 0 0 0 0 ]
-2026/08/16-13:59:08.584 54ec Delete type=2 #1932
-2026/08/16-16:00:57.854 54ec Compacting 1@1 + 3@2 files
-2026/08/16-16:00:57.886 54ec Generated table #1938@1: 339 keys, 2116947 bytes
-2026/08/16-16:00:57.916 54ec Generated table #1939@1: 339 keys, 2111620 bytes
-2026/08/16-16:00:57.945 54ec Generated table #1940@1: 714 keys, 2117505 bytes
-2026/08/16-16:00:57.949 54ec Generated table #1941@1: 3 keys, 6283 bytes
-2026/08/16-16:00:57.949 54ec Compacted 1@1 + 3@2 files => 6352355 bytes
-2026/08/16-16:00:57.951 54ec compacted to: files[ 0 0 22 0 0 0 0 ]
-2026/08/16-16:00:57.951 54ec Delete type=2 #1893
-2026/08/16-16:00:57.951 54ec Delete type=2 #1894
-2026/08/16-16:00:57.952 54ec Delete type=2 #1895
-2026/08/16-16:00:57.952 54ec Delete type=2 #1911
-2026/08/16-16:00:57.952 54ec Delete type=2 #1912
-2026/08/16-16:00:57.953 54ec Delete type=2 #1934
-2026/08/16-16:00:57.953 54ec Delete type=2 #1935
+2026/08/22-21:39:43.801 ab9c Recovering log #1965
+2026/08/22-21:39:43.802 ab9c Level-0 table #1967: started
+2026/08/22-21:39:43.807 ab9c Level-0 table #1967: 114344 bytes OK
+2026/08/22-21:39:43.815 ab9c Delete type=0 #1965
+2026/08/22-21:39:43.815 ab9c Delete type=3 #1964
+2026/08/22-21:39:43.912 b530 Compacting 1@0 + 0@1 files
+2026/08/22-21:39:43.915 b530 Generated table #1969@0: 8 keys, 49103 bytes
+2026/08/22-21:39:43.919 b530 Generated table #1970@0: 33 keys, 48218 bytes
+2026/08/22-21:39:43.919 b530 Compacted 1@0 + 0@1 files => 97321 bytes
+2026/08/22-21:39:43.922 b530 compacted to: files[ 0 2 22 0 0 0 0 ]
+2026/08/22-21:39:48.904 b530 Compacting 1@1 + 6@2 files
+2026/08/22-21:39:48.930 b530 Generated table #1971@1: 1412 keys, 2125640 bytes
+2026/08/22-21:39:48.956 b530 Generated table #1972@1: 1416 keys, 2127603 bytes
+2026/08/22-21:39:48.982 b530 Generated table #1973@1: 1374 keys, 2124994 bytes
+2026/08/22-21:39:49.007 b530 Generated table #1974@1: 1375 keys, 2126364 bytes
+2026/08/22-21:39:49.038 b530 Generated table #1975@1: 1416 keys, 2126188 bytes
+2026/08/22-21:39:49.064 b530 Generated table #1976@1: 1392 keys, 2124867 bytes
+2026/08/22-21:39:49.068 b530 Generated table #1977@1: 28 keys, 44899 bytes
+2026/08/22-21:39:49.068 b530 Compacted 1@1 + 6@2 files => 12800555 bytes
+2026/08/22-21:39:49.070 b530 compacted to: files[ 0 1 23 0 0 0 0 ]
+2026/08/22-21:39:49.070 b530 Delete type=2 #1904
+2026/08/22-21:39:49.072 b530 Delete type=2 #1905
+2026/08/22-21:39:49.073 b530 Delete type=2 #1906
+2026/08/22-21:39:49.074 b530 Delete type=2 #1958
+2026/08/22-21:39:49.076 b530 Delete type=2 #1959
+2026/08/22-21:39:49.077 b530 Delete type=2 #1960
+2026/08/22-21:39:49.078 b530 Delete type=2 #1967
+2026/08/22-21:39:49.079 b530 Delete type=2 #1970
+2026/08/22-21:42:24.115 b530 Compacting 1@1 + 3@2 files
+2026/08/22-21:42:24.140 b530 Generated table #1978@1: 339 keys, 2115428 bytes
+2026/08/22-21:42:24.165 b530 Generated table #1979@1: 340 keys, 2114425 bytes
+2026/08/22-21:42:24.188 b530 Generated table #1980@1: 682 keys, 2115814 bytes
+2026/08/22-21:42:24.198 b530 Generated table #1981@1: 11 keys, 16495 bytes
+2026/08/22-21:42:24.198 b530 Compacted 1@1 + 3@2 files => 6362162 bytes
+2026/08/22-21:42:24.200 b530 compacted to: files[ 0 0 24 0 0 0 0 ]
+2026/08/22-21:42:24.200 b530 Delete type=2 #1947
+2026/08/22-21:42:24.202 b530 Delete type=2 #1948
+2026/08/22-21:42:24.202 b530 Delete type=2 #1949
+2026/08/22-21:42:24.203 b530 Delete type=2 #1969
