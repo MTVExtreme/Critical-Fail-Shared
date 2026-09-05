@@ -1,3 +1,11 @@
-2026/08/19-11:01:18.561 8638 Recovering log #268
-2026/08/19-11:01:18.570 8638 Delete type=0 #268
-2026/08/19-11:01:18.570 8638 Delete type=3 #267
+2026/08/28-18:50:34.587 cd04 Recovering log #274
+2026/08/28-18:50:34.590 cd04 Level-0 table #276: started
+2026/08/28-18:50:34.599 cd04 Level-0 table #276: 783775 bytes OK
+2026/08/28-18:50:34.611 cd04 Delete type=0 #274
+2026/08/28-18:50:34.611 cd04 Delete type=3 #273
+2026/08/29-22:46:59.948 cd40 Compacting 1@0 + 1@1 files
+2026/08/29-22:46:59.962 cd40 Generated table #278@0: 293 keys, 668869 bytes
+2026/08/29-22:46:59.962 cd40 Compacted 1@0 + 1@1 files => 668869 bytes
+2026/08/29-22:46:59.965 cd40 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/08/29-22:46:59.966 cd40 Delete type=2 #256
+2026/08/29-22:46:59.966 cd40 Delete type=2 #276
