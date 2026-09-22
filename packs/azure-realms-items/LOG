@@ -1,11 +1,11 @@
-2026/08/28-18:50:34.587 cd04 Recovering log #274
-2026/08/28-18:50:34.590 cd04 Level-0 table #276: started
-2026/08/28-18:50:34.599 cd04 Level-0 table #276: 783775 bytes OK
-2026/08/28-18:50:34.611 cd04 Delete type=0 #274
-2026/08/28-18:50:34.611 cd04 Delete type=3 #273
-2026/08/29-22:46:59.948 cd40 Compacting 1@0 + 1@1 files
-2026/08/29-22:46:59.962 cd40 Generated table #278@0: 293 keys, 668869 bytes
-2026/08/29-22:46:59.962 cd40 Compacted 1@0 + 1@1 files => 668869 bytes
-2026/08/29-22:46:59.965 cd40 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/08/29-22:46:59.966 cd40 Delete type=2 #256
-2026/08/29-22:46:59.966 cd40 Delete type=2 #276
+2026/09/14-19:18:47.586 11d30 Recovering log #285
+2026/09/14-19:18:47.587 11d30 Level-0 table #288: started
+2026/09/14-19:18:47.591 11d30 Level-0 table #288: 27242 bytes OK
+2026/09/14-19:18:47.599 11d30 Delete type=0 #285
+2026/09/14-19:18:47.599 11d30 Delete type=3 #284
+2026/09/17-19:31:11.368 e2dc Compacting 1@0 + 1@1 files
+2026/09/17-19:31:11.386 e2dc Generated table #290@0: 298 keys, 696587 bytes
+2026/09/17-19:31:11.386 e2dc Compacted 1@0 + 1@1 files => 696587 bytes
+2026/09/17-19:31:11.389 e2dc compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/09/17-19:31:11.391 e2dc Delete type=2 #286
+2026/09/17-19:31:11.391 e2dc Delete type=2 #288

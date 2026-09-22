@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.8] - 2026-09-22
+
+- Added more new desert and tomb themed monsters. (Thanks Vamp!)
+
+## [1.3.7] - 2026-09-11
+
+- Added more new desert and tomb themed monsters. (Thanks Vamp!)
+
 ## [1.3.6] - 2026-09-05
 
 - Added more new desert and tomb themed monsters, updated items. (Thanks Vamp!)
