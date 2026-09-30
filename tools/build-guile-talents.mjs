@@ -23,21 +23,21 @@ const CACHE_DIR = path.join(process.env.TEMP || "/tmp", "guile-html");
 const DRY = process.argv.includes("--dry");
 
 const SPHERES = [
-  { key: "artifice", label: "Artifice", slug: "artifice", icon: "systems/pf1/icons/skills/mech_10.jpg" },
-  { key: "bluster", label: "Bluster", slug: "bluster", icon: "systems/pf1/icons/skills/red_01.jpg" },
-  { key: "bodyControl", label: "Body Control", slug: "body-control", icon: "systems/pf1/icons/skills/green_01.jpg" },
-  { key: "communication", label: "Communication", slug: "communication", icon: "systems/pf1/icons/skills/blue_01.jpg" },
-  { key: "faction", label: "Faction", slug: "faction", icon: "systems/pf1/icons/skills/yellow_10.jpg" },
-  { key: "herbalism", label: "Herbalism", slug: "herbalism", icon: "systems/pf1/icons/skills/nature_01.jpg" },
-  { key: "infiltration", label: "Infiltration", slug: "infiltration", icon: "systems/pf1/icons/skills/shadow_01.jpg" },
-  { key: "investigation", label: "Investigation", slug: "investigation", icon: "systems/pf1/icons/skills/blue_20.jpg" },
-  { key: "navigation", label: "Navigation", slug: "navigation", icon: "systems/pf1/icons/skills/water_01.jpg" },
-  { key: "performance", label: "Performance", slug: "performance", icon: "systems/pf1/icons/skills/violet_01.jpg" },
-  { key: "spellhacking", label: "Spellhacking", slug: "spellhacking", icon: "systems/pf1/icons/skills/violet_12.jpg" },
-  { key: "study", label: "Study", slug: "study", icon: "systems/pf1/icons/skills/yellow_20.jpg" },
-  { key: "subterfuge", label: "Subterfuge", slug: "subterfuge", icon: "systems/pf1/icons/skills/shadow_12.jpg" },
-  { key: "survivalism", label: "Survivalism", slug: "survivalism", icon: "systems/pf1/icons/skills/nature_06.jpg" },
-  { key: "vocation", label: "Vocation", slug: "vocation", icon: "systems/pf1/icons/skills/yellow_36.jpg" }
+  { key: "artifice", label: "Artifice", slug: "artifice", icon: "modules/critical-fail-shared/img/spheres/artifice.webp" },
+  { key: "bluster", label: "Bluster", slug: "bluster", icon: "modules/critical-fail-shared/img/spheres/bluster.webp" },
+  { key: "bodyControl", label: "Body Control", slug: "body-control", icon: "modules/critical-fail-shared/img/spheres/body-control.webp" },
+  { key: "communication", label: "Communication", slug: "communication", icon: "modules/critical-fail-shared/img/spheres/communication.webp" },
+  { key: "faction", label: "Faction", slug: "faction", icon: "modules/critical-fail-shared/img/spheres/faction.webp" },
+  { key: "herbalism", label: "Herbalism", slug: "herbalism", icon: "modules/critical-fail-shared/img/spheres/herbalism.webp" },
+  { key: "infiltration", label: "Infiltration", slug: "infiltration", icon: "modules/critical-fail-shared/img/spheres/infiltration.webp" },
+  { key: "investigation", label: "Investigation", slug: "investigation", icon: "modules/critical-fail-shared/img/spheres/investigation.webp" },
+  { key: "navigation", label: "Navigation", slug: "navigation", icon: "modules/critical-fail-shared/img/spheres/navigation.webp" },
+  { key: "performance", label: "Performance", slug: "performance", icon: "modules/critical-fail-shared/img/spheres/performance.webp" },
+  { key: "spellhacking", label: "Spellhacking", slug: "spellhacking", icon: "modules/critical-fail-shared/img/spheres/spellhacking.webp" },
+  { key: "study", label: "Study", slug: "study", icon: "modules/critical-fail-shared/img/spheres/study.webp" },
+  { key: "subterfuge", label: "Subterfuge", slug: "subterfuge", icon: "modules/critical-fail-shared/img/spheres/subterfuge.webp" },
+  { key: "survivalism", label: "Survivalism", slug: "survivalism", icon: "modules/critical-fail-shared/img/spheres/survivalism.webp" },
+  { key: "vocation", label: "Vocation", slug: "vocation", icon: "modules/critical-fail-shared/img/spheres/vocation.webp" }
 ];
 
 const SOURCE_NOTE = "Open Game Content from Spheres of Guile and related Spheres publications (Drop Dead Studios and other publishers), compiled from the Spheres of Power Wiki under the Open Game License 1.0a.";

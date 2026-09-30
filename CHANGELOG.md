@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.1] - 2026-09-29
+
+- Patch missing things I wanted to include in the last patch
+- Added the Spheres Feats compendium: Power, Might, Guile, and Champions feats, including Dual Sphere feats.
+- Added the Spheres Items compendium: marvelous items, implements, compounds, weapons, armor, and the other wiki equipment catalogs.
+- Guile talent icons now use the official sphere icons.
+
 ## [1.4.0] - 2026-09-29
 
 - Added the Spheres of Guile Talents compendium: every skill talent from Artifice through Vocation, as Pathfinder 1e skill talents for use with pf1spheres.
