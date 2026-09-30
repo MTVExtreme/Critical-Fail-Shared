@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] - 2026-09-29
+
+- Added the Spheres of Guile Talents compendium: every skill talent from Artifice through Vocation, as Pathfinder 1e skill talents for use with pf1spheres.
+- Base sphere entries carry a bonus skill rank Change (5 per talent spent in the sphere, up to Hit Dice) and count as a talent; Vocation specialty talents and Working Folk grant ranks equal to Hit Dice. Drawbacks stay excluded from talent counts.
+- Added more new desert and tomb themed monsters. (Thanks Vamp!)
+
 ## [1.3.8] - 2026-09-22
 
 - Added more new desert and tomb themed monsters. (Thanks Vamp!)
