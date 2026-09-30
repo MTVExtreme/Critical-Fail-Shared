@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.2] - 2026-09-30
+
+- Added the Tech, Tinker, and Occultism sphere talents (base sphere, talents, legendary talents, and drawbacks). Occultism's base sphere grants bonus skill ranks the same way the Guile spheres do.
+- Added Spheres Classes: the requested champion, operative, practitioner, and prestige classes, each with its class features linked on the class progression.
+- Tinker and Occultism use the official Ultimate Engineering and Diamond Spheres: Erudition & Esoterica covers. Tech uses the existing sphere symbol.
+
 ## [1.4.1] - 2026-09-29
 
 - Patch missing things I wanted to include in the last patch
