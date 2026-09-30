@@ -172,25 +172,25 @@ function parseStats(text, section) {
 }
 
 function itemIcon(slot, page) {
-  if (page.slug === "weapons") return "icons/weapons/swords/sword-guard-steel.webp";
+  if (page.slug === "weapons") return "icons/weapons/swords/sword-guard.webp";
   if (page.slug === "armor") return "icons/equipment/chest/breastplate-layered-steel.webp";
   if (page.slug === "special-materials") return "icons/commodities/metal/ingot-steel.webp";
   const icons = {
     ring: "icons/equipment/finger/ring-shield-silver.webp",
-    belt: "icons/equipment/waist/belt-buckle-square-steel.webp",
+    belt: "icons/equipment/waist/belt-buckle-gold-blue.webp",
     neck: "icons/equipment/neck/amulet-round-gold-blue.webp",
     head: "icons/equipment/head/helm-barbute-steel.webp",
-    headband: "icons/equipment/head/hood-cloth-grey.webp",
-    hands: "icons/equipment/hand/glove-simple-leather.webp",
+    headband: "icons/equipment/head/hood-cloth-white.webp",
+    hands: "icons/equipment/hand/glove-simple-leather-brown-blue.webp",
     feet: "icons/equipment/feet/boots-leather-brown.webp",
-    eyes: "icons/tools/senses/spyglass-brown.webp",
+    eyes: "icons/tools/navigation/spyglass-telescope-brass.webp",
     shoulders: "icons/equipment/back/cloak-brown.webp",
     chest: "icons/equipment/chest/breastplate-scale-grey.webp",
     body: "icons/equipment/chest/breastplate-scale-grey.webp",
-    wrists: "icons/equipment/wrist/bracer-studded-leather.webp",
-    shield: "icons/equipment/shield/heater-steel-boss.webp",
+    wrists: "icons/equipment/wrist/bracer-studded-leather-steel.webp",
+    shield: "icons/equipment/shield/heater-steel-boss-red.webp",
     armor: "icons/equipment/chest/breastplate-layered-steel.webp",
-    slotless: "icons/commodities/treasure/brooch-jewel-gold.webp"
+    slotless: "icons/commodities/treasure/brooch-jewel-gold-blue.webp"
   };
   return icons[slot] || icons.slotless;
 }

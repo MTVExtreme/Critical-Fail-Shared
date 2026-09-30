@@ -1,5 +1,5 @@
-2026/09/29-19:58:35.886 12720 Recovering log #289
-2026/09/29-19:58:35.886 12720 Level-0 table #292: started
-2026/09/29-19:58:35.890 12720 Level-0 table #292: 37953 bytes OK
-2026/09/29-19:58:35.898 12720 Delete type=0 #289
-2026/09/29-19:58:35.898 12720 Delete type=3 #287
+2026/09/30-13:34:49.104 79c4 Delete type=3 #1
+2026/09/30-13:34:49.120 1cc2c Level-0 table #5: started
+2026/09/30-13:34:49.129 1cc2c Level-0 table #5: 743696 bytes OK
+2026/09/30-13:34:49.131 1cc2c Delete type=0 #3
+2026/09/30-13:34:49.131 1cc2c Manual compaction at level-0 from '!' @ 72057594037927935 : 1 .. '~' @ 0 : 0; will stop at (end)

@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.3] - 2026-09-30
+
+- Fixed Spheres Items icons that pointed at Foundry image files which are not in this install. Each one now uses an existing `icons/...` file.
+- Added/Updated Homebrew Azure Realms Races
+
 ## [1.4.2] - 2026-09-30
 
 - Added the Tech, Tinker, and Occultism sphere talents (base sphere, talents, legendary talents, and drawbacks). Occultism's base sphere grants bonus skill ranks the same way the Guile spheres do.

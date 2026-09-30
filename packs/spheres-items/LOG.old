@@ -1,5 +1,5 @@
-2026/09/29-22:27:03.389 12968 Delete type=3 #1
-2026/09/29-22:27:03.617 4890 Level-0 table #5: started
-2026/09/29-22:27:03.784 4890 Level-0 table #5: 1425794 bytes OK
-2026/09/29-22:27:03.873 4890 Delete type=0 #3
-2026/09/29-22:27:03.873 4890 Manual compaction at level-0 from '!' @ 72057594037927935 : 1 .. '~' @ 0 : 0; will stop at (end)
+2026/09/30-12:58:51.909 7de8 Recovering log #11
+2026/09/30-12:58:51.915 7de8 Level-0 table #13: started
+2026/09/30-12:58:52.134 7de8 Level-0 table #13: 1162304 bytes OK
+2026/09/30-12:58:52.308 7de8 Delete type=0 #11
+2026/09/30-12:58:52.308 7de8 Delete type=3 #10
