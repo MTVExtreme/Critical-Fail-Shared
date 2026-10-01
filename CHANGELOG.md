@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.4] - 2026-10-01
+
+- Added Caster Guns, Shardcasters, and Mananite Crystals
+
 ## [1.4.3] - 2026-09-30
 
 - Fixed Spheres Items icons that pointed at Foundry image files which are not in this install. Each one now uses an existing `icons/...` file.
