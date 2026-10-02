@@ -390,27 +390,54 @@ function casterGun(row, folderId, sort) {
   return item;
 }
 
+function supercombineAction({ dice, footer }) {
+  return {
+    _id: foundryId(`mananite-action|Supercombine|${dice}|${footer}`),
+    name: "Supercombine",
+    img: "",
+    actionType: "save",
+    activation: { type: "standard", unchained: { type: "standard" } },
+    damage: { parts: [{ formula: `${dice}d6`, types: ["force"] }] },
+    duration: { units: "inst" },
+    range: { value: "5", units: "ft", maxIncrements: 1 },
+    save: {
+      dc: "10 + @abilities.dex.mod",
+      type: "ref",
+      description: "A successful Reflex save halves the force damage.",
+      harmless: false
+    },
+    measureTemplate: { type: "circle", size: "5", color: "#7fd4ff" },
+    ammo: { type: "mananite", cost: 6 },
+    notes: { footer: [footer] },
+    extraAttacks: { type: "" }
+  };
+}
+
 function shardcaster(row, folderId, sort) {
   const [name, type, core, shard, combineDice, range, hands, chassis, corePrice, starter, frame] = row;
-  const shardActions = elementActions({
+  const burst = shotAction({
+    name: "3-Round Burst",
     formula: shard,
+    types: ["piercing"],
     range,
     increments: 5,
     cone: false,
-    footer: `Shard. Spends 1 charge from the loaded ${core} Mananite crystal. Shard damage stays ${shard}.`,
-    label: "Shard",
+    footer: `Three piercing shots. The second shot takes -1 to hit, and the third takes -2. Each shot spends 1 charge from the loaded ${core} Mananite crystal.`,
+    mananite: true,
     cost: 1
   });
-  const combine = elementActions({
+  burst.extraAttacks = {
+    type: "custom",
+    manual: [
+      { name: "Second round", formula: "-1" },
+      { name: "Third round", formula: "-2" }
+    ]
+  };
+  const combine = supercombineAction({
     dice: combineDice,
-    range,
-    increments: 5,
-    cone: false,
-    footer: `Supercombine. Spends 6 charges. ${combineDice} dice, using the loaded crystal's quality.`,
-    label: "Supercombine",
-    cost: 6
+    footer: `Force damage in a 5-foot burst. Reflex half (DC 10 + Dexterity modifier). Spends 6 charges. ${combineDice} dice, using the loaded crystal's quality.`
   });
-  const actions = [...shardActions, ...combine];
+  const actions = [burst, combine];
   const description = [
     `<p>${name}. ${type}. Ammunition: a ${core} Mananite crystal.</p>`,
     "<ul>",
@@ -418,14 +445,14 @@ function shardcaster(row, folderId, sort) {
     `<li><b>Stage 1 Pristine core:</b> ${gp(corePrice)}</li>`,
     `<li><b>Starter cost:</b> ${gp(starter)}</li>`,
     `<li><b>Range:</b> ${range} ft.</li>`,
-    `<li><b>Shard:</b> ${shard}, chosen energy, 1 charge</li>`,
-    `<li><b>Supercombine:</b> ${combineDice} dice, 6 charges. Die: ${qualityList()}.</li>`,
+    `<li><b>3-Round Burst:</b> ${shard} piercing. Three attacks at +0, -1, and -2. One charge per shot.</li>`,
+    `<li><b>Supercombine:</b> ${combineDice} force dice in a 5-foot burst, Reflex half. 6 charges. Die: ${qualityList()}.</li>`,
     "</ul>",
-    "<p>Pick Shard or Supercombine and the energy type. The loaded crystal spends the charges. Supercombine uses that crystal's quality for the die.</p>"
+    "<p>There are two attacks. The burst is piercing. Supercombine does not make an attack roll; it deals force damage and calls for a Reflex save.</p>"
   ].join("");
   const profiles = [
-    ...shardActions.map(() => ({ dice: Number(shard.split("d")[0]), draw: 1, scale: false })),
-    ...combine.map(() => ({ dice: combineDice, draw: 6, scale: true }))
+    { dice: Number(shard.split("d")[0]), draw: 1, scale: false },
+    { dice: combineDice, draw: 6, scale: true }
   ];
   const item = weaponShell({
     name,
@@ -519,7 +546,7 @@ const sample = crystals.find((item) => item.name === "Tiny Marvelous Mananite (S
 console.log("crystals", crystals.length, "guns", guns.length, "shardcasters", shards.length);
 console.log("sample", sample.name, "unit price", sample.system.price, "quantity", sample.system.quantity, "unit weight", sample.system.weight.value);
 console.log("pistol attacks", guns[2].system.actions.length, guns[2].system.actions.map((action) => action.name).join(", "));
-console.log("shard attacks", shards[0].system.actions.length, shards[0].system.actions[0].name, shards[0].system.actions[6].name);
+console.log("shard attacks", shards[0].system.actions.map((action) => `${action.name} ${action.actionType} ${action.damage.parts[0].types.join("/")} ${action.damage.parts[0].formula}`).join(" | "));
 console.log("crystal ammo", crystals[0].system.subType, crystals[0].system.extraType, crystals[0].flags[UTIL].mananiteCharge);
 
 if (DRY) process.exit(0);

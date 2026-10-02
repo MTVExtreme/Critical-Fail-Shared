@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.6] - 2026-10-02
+
+- Shardcasters are 3-round piercing bursts (second shot -1, third shot -2) plus one force Supercombine: no attack roll, Reflex half, 5-foot burst.
+- Graveknight, Graveking Atropus now has Muscular Reflexes instead of Combat Reflexes, matching the test module. That copy had no other new monsters or races.
+
 ## [1.4.5] - 2026-10-02
 
 - Refined Caster Guns, Shardcasters, and Mananite Crystals
