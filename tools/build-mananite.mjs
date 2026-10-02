@@ -158,7 +158,7 @@ function physical(price, weight, size) {
   };
 }
 
-function shotAction({ name, formula, types, range, increments, cone, footer, mananite = false }) {
+function shotAction({ name, formula, types, range, increments, cone, footer, mananite = false, cost = 0 }) {
   const action = {
     _id: foundryId(`mananite-action|${name}|${formula}|${types.join(",")}|${range}|${footer}`),
     name,
@@ -172,12 +172,12 @@ function shotAction({ name, formula, types, range, increments, cone, footer, man
     range: { value: String(range), units: "ft", maxIncrements: increments },
     notes: { footer: [footer] }
   };
-  if (mananite) action.ammo = { type: "mananite", cost: 0 };
+  if (mananite) action.ammo = { type: "mananite", cost };
   if (cone) action.measureTemplate = { type: "cone", size: String(range), color: "#7fd4ff" };
   return action;
 }
 
-function elementActions({ dice, formula, range, increments, cone, footer, label }) {
+function elementActions({ dice, formula, range, increments, cone, footer, label, cost }) {
   const damage = formula ?? `${dice}d6`;
   return ELEMENTS.map(([type, element]) => shotAction({
     name: label ? `${label} (${element})` : element,
@@ -187,7 +187,8 @@ function elementActions({ dice, formula, range, increments, cone, footer, label 
     increments,
     cone,
     footer,
-    mananite: true
+    mananite: true,
+    cost
   }));
 }
 
@@ -207,15 +208,15 @@ function crystalItem(size, quality, stage, folderId, sort) {
   const description = [
     `<p><em>Mananite crystal.</em> ${size.name}, ${quality.name} quality, ${stage.name} refinement. Introduced ${stage.year}.</p>`,
     "<ul>",
-    `<li><b>Charge capacity:</b> ${capacity}</li>`,
-    "<li><b>Charge use:</b> 1</li>",
+    `<li><b>Charges:</b> ${capacity}. The item quantity is the remaining charges.</li>`,
+    "<li><b>Charge use:</b> 1 when discharged directly</li>",
     `<li><b>Recharges (integrity):</b> ${quality.integrity}</li>`,
     `<li><b>Market value:</b> ${gp(value)}</li>`,
     `<li><b>Recharge cost:</b> ${gp(rechargeCost)} (${gp(stage.recharge)} per charge)</li>`,
     `<li><b>Die:</b> ${die}</li>`,
     `<li><b>Discharge:</b> ${discharge}, ${blast}</li>`,
     "</ul>",
-    `<p>Mananite ammunition. Load it into a caster gun or shardcaster of ${size.name} core size. The gun spends its draw from this charge pool, and its damage die becomes ${die}. Discharging the crystal itself spends 1 charge.</p>`
+    `<p>Mananite ammunition for a ${size.name} caster gun. Its quantity is the charge pool, and a shot spends the gun's draw from that quantity. The gun's damage die becomes ${die}. Discharging the crystal directly spends 1 charge.</p>`
   ].join("");
   const footer = `Discharges 1 charge. ${discharge}, ${blast}.`;
   const actions = ELEMENTS.map(([type, element]) => {
@@ -252,7 +253,8 @@ function crystalItem(size, quality, stage, folderId, sort) {
     system: {
       description: { value: description, instructions: "" },
       tags: ["Mananite", size.name, quality.name, stage.name],
-      ...physical(value, size.weight, size.pf1),
+      ...physical(value / Math.max(capacity, 1), size.weight / Math.max(capacity, 1), size.pf1),
+      quantity: capacity,
       hp: { base: 5 },
       broken: false,
       hardness: 5,
@@ -261,10 +263,10 @@ function crystalItem(size, quality, stage, folderId, sort) {
       abundant: false,
       recoverChance: 0,
       uses: {
-        value: capacity,
-        per: "charges",
+        value: null,
+        per: "",
         autoDeductChargesCost: "1",
-        maxFormula: String(capacity),
+        maxFormula: "",
         rechargeFormula: ""
       },
       actions,
@@ -359,7 +361,7 @@ function casterGun(row, folderId, sort) {
   const increments = cone || range >= 600 ? 1 : 5;
   const rangeText = cone ? `${range}-ft. cone` : `${range.toLocaleString("en-US")} ft.`;
   const footer = `Draws ${draw} charge${draw === 1 ? "" : "s"} from the loaded ${core} Mananite crystal. Damage die follows that crystal's quality.`;
-  const actions = elementActions({ dice, range, increments, cone, footer });
+  const actions = elementActions({ dice, range, increments, cone, footer, cost: draw });
   const description = [
     `<p>${name}. ${type}. Ammunition: a ${core} Mananite crystal.</p>`,
     "<ul>",
@@ -396,7 +398,8 @@ function shardcaster(row, folderId, sort) {
     increments: 5,
     cone: false,
     footer: `Shard. Spends 1 charge from the loaded ${core} Mananite crystal. Shard damage stays ${shard}.`,
-    label: "Shard"
+    label: "Shard",
+    cost: 1
   });
   const combine = elementActions({
     dice: combineDice,
@@ -404,7 +407,8 @@ function shardcaster(row, folderId, sort) {
     increments: 5,
     cone: false,
     footer: `Supercombine. Spends 6 charges. ${combineDice} dice, using the loaded crystal's quality.`,
-    label: "Supercombine"
+    label: "Supercombine",
+    cost: 6
   });
   const actions = [...shardActions, ...combine];
   const description = [
@@ -513,7 +517,7 @@ const guns = CASTER_GUNS.map((row, index) => casterGun(row, gunFolder._id, index
 const shards = SHARDCASTERS.map((row, index) => shardcaster(row, shardFolder._id, index));
 const sample = crystals.find((item) => item.name === "Tiny Marvelous Mananite (Stage 2)");
 console.log("crystals", crystals.length, "guns", guns.length, "shardcasters", shards.length);
-console.log("sample", sample.name, "price", sample.system.price, "charges", sample.system.uses.value, "actions", sample.system.actions.length);
+console.log("sample", sample.name, "unit price", sample.system.price, "quantity", sample.system.quantity, "unit weight", sample.system.weight.value);
 console.log("pistol attacks", guns[2].system.actions.length, guns[2].system.actions.map((action) => action.name).join(", "));
 console.log("shard attacks", shards[0].system.actions.length, shards[0].system.actions[0].name, shards[0].system.actions[6].name);
 console.log("crystal ammo", crystals[0].system.subType, crystals[0].system.extraType, crystals[0].flags[UTIL].mananiteCharge);
