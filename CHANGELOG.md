@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.5] - 2026-10-02
+
+- Refined Caster Guns, Shardcasters, and Mananite Crystals
+
 ## [1.4.4] - 2026-10-01
 
 - Added Caster Guns, Shardcasters, and Mananite Crystals
