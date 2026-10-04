@@ -158,26 +158,32 @@ function physical(price, weight, size) {
   };
 }
 
-function shotAction({ name, formula, types, range, increments, cone, footer, mananite = false, cost = 0 }) {
+function shotAction({
+  name, formula, types, range, increments, cone, footer, mananite = false, cost = 0, critRange = 20,
+  attackBonus = "", touch = false, activation = "attack", extraType = "standard", ray = false
+}) {
   const action = {
-    _id: foundryId(`mananite-action|${name}|${formula}|${types.join(",")}|${range}|${footer}`),
+    _id: foundryId(`mananite-action|${name}|${formula}|${types.join(",")}|${range}|${footer}|${critRange}|${attackBonus}|${activation}`),
     name,
     img: "",
     actionType: "rwak",
-    activation: { type: "attack", unchained: { type: "attack" } },
-    ability: { attack: "_default", critMult: 2, critRange: 20 },
+    activation: { type: activation, unchained: { type: activation } },
+    ability: { attack: "_default", critMult: 2, critRange },
     damage: { parts: [{ formula, types }] },
     duration: { units: "inst" },
-    extraAttacks: { type: "standard" },
+    extraAttacks: { type: extraType },
     range: { value: String(range), units: "ft", maxIncrements: increments },
     notes: { footer: [footer] }
   };
+  if (attackBonus) action.attackBonus = attackBonus;
+  if (touch) action.touch = true;
   if (mananite) action.ammo = { type: "mananite", cost };
   if (cone) action.measureTemplate = { type: "cone", size: String(range), color: "#7fd4ff" };
+  if (ray) action.measureTemplate = { type: "ray", size: String(range), color: "#7fd4ff" };
   return action;
 }
 
-function elementActions({ dice, formula, range, increments, cone, footer, label, cost }) {
+function elementActions({ dice, formula, range, increments, cone, footer, label, cost, critRange = 20, ...rest }) {
   const damage = formula ?? `${dice}d6`;
   return ELEMENTS.map(([type, element]) => shotAction({
     name: label ? `${label} (${element})` : element,
@@ -188,7 +194,9 @@ function elementActions({ dice, formula, range, increments, cone, footer, label,
     cone,
     footer,
     mananite: true,
-    cost
+    cost,
+    critRange,
+    ...rest
   }));
 }
 
@@ -291,7 +299,7 @@ function gunRuntime(coreSize, actions, profiles) {
   return { coreSize, actions: byAction };
 }
 
-function weaponShell({ name, kind, hands, price, weight, actions, description, img, group, runtime }) {
+function weaponShell({ name, kind, hands, price, weight, actions, description, img, group, runtime, properties = {}, groups = ["firearms"] }) {
   return {
     _id: foundryId(`mananite-weapon|${name}`),
     name,
@@ -335,9 +343,9 @@ function weaponShell({ name, kind, hands, price, weight, actions, description, i
       weaponSubtype: "ranged",
       hands,
       baseTypes: [name],
-      weaponGroups: ["firearms"],
+      weaponGroups: groups,
       material: { base: { value: "steel", custom: false }, normal: { value: "", custom: false }, addon: [] },
-      properties: {},
+      properties,
       showInQuickbar: true,
       sources: []
     },
@@ -355,22 +363,107 @@ function gunWeight(frame) {
   return 3;
 }
 
+const SIEGE = {
+  "Field Caster Cannon": { crew: 3, aim: 1, load: 3, size: "Huge" },
+  "Siege Caster": { crew: 5, aim: 3, load: 5, size: "Gargantuan" },
+  "Grand Caster": { crew: 6, aim: 4, load: 6, size: "Colossal" }
+};
+
+function firingMode(name) {
+  if (name === "Rotary Caster") return "slow";
+  if (SIEGE[name]) return "siege";
+  if (name === "Scattercaster") return "scatter";
+  return "semi";
+}
+
+function withSecondShot(actions) {
+  for (const action of actions) {
+    action.extraAttacks = {
+      type: "custom",
+      manual: [{ name: "Second shot", formula: "0" }]
+    };
+  }
+  return actions;
+}
+
 function casterGun(row, folderId, sort) {
   const [name, type, core, dice, range, cone, draw, chassis, corePrice, starter, frame] = row;
   const hands = type.startsWith("Concealable") || type.startsWith("Light") || type === "1H" ? 1 : 2;
   const increments = cone || range >= 600 ? 1 : 5;
   const rangeText = cone ? `${range}-ft. cone` : `${range.toLocaleString("en-US")} ft.`;
-  const footer = `Draws ${draw} charge${draw === 1 ? "" : "s"} from the loaded ${core} Mananite crystal. Damage die follows that crystal's quality.`;
-  const actions = elementActions({ dice, range, increments, cone, footer, cost: draw });
+  const mode = firingMode(name);
+  const shotFooter = `Touch attack. Draws ${draw} charge${draw === 1 ? "" : "s"} from the loaded ${core} Mananite crystal. Damage die follows that crystal's quality. Critical 19–20/×2.`;
+  const actions = [];
+  const profiles = [];
+  let properties = {};
+  let groups = ["firearms"];
+  let firing = "";
+
+  if (mode === "slow") {
+    properties = { slf: true };
+    const shots = elementActions({
+      dice, range, increments, cone, cost: draw, critRange: 19, touch: true,
+      activation: "full", extraType: "",
+      footer: `${shotFooter} Slow-firing: a full-round action, with no iterative attacks and no automatic fire.`
+    });
+    actions.push(...shots);
+    profiles.push(...shots.map(() => ({ dice, draw, scale: true, solo: true })));
+    firing = "<li><b>Firing:</b> Slow-firing touch weapon. One shot is a full-round action. No iterative attacks, and it cannot fire an automatic burst.</li>";
+  } else if (mode === "siege") {
+    const siege = SIEGE[name];
+    groups = ["firearms", "siegeEngines"];
+    const shots = elementActions({
+      dice, range, increments, cone: false, cost: draw, critRange: 19, touch: true,
+      activation: "standard", extraType: "",
+      footer: `${shotFooter} Siege engine. Fire only after it is loaded and aimed. No iterative attacks and no precision damage.`
+    });
+    actions.push(...shots);
+    profiles.push(...shots.map(() => ({ dice, draw, scale: true, solo: true })));
+    firing = [
+      `<li><b>Firing:</b> ${siege.size} direct-fire siege engine, and a touch attack. Crew ${siege.crew}. Loading takes ${siege.load} full-round actions. Aiming takes ${siege.aim} full-round action${siege.aim === 1 ? "" : "s"}, doubled with a short crew. Firing a loaded, aimed gun is a standard action and does not allow iterative attacks.</li>`,
+      "<li><b>Aim penalty:</b> -2 per size category the gun is larger than the creature aiming it. Knowledge (engineering) ignores that penalty. An extra crew member no more than three sizes smaller than the gun reduces it by 2.</li>",
+      "<li><b>Precision:</b> No sneak attack or other precision damage. It cannot fire an automatic burst.</li>"
+    ].join("");
+  } else if (mode === "scatter") {
+    properties = { sma: true, sct: true };
+    const shots = withSecondShot(elementActions({
+      dice, range, increments, cone, cost: draw, critRange: 19, touch: true, extraType: "custom",
+      footer: `${shotFooter} Scatter cone. A full attack fires twice at -2, or at -6 if Rapid Shot is also used.`
+    }));
+    actions.push(...shots);
+    profiles.push(...shots.map(() => ({ dice, draw, scale: true, semi: true })));
+    firing = "<li><b>Firing:</b> Scatter, semi-automatic, and touch. One shot is an attack. A full attack fires twice, both at -2. With Rapid Shot checked, every shot is -6 and Rapid Shot's extra attack is included. It does not fire an automatic line.</li>";
+  } else {
+    properties = { sma: true, ato: true };
+    const shots = withSecondShot(elementActions({
+      dice, range, increments, cone, cost: draw, critRange: 19, touch: true, extraType: "custom",
+      footer: `${shotFooter} Semi-automatic. A full attack fires twice at -2, or at -6 if Rapid Shot is also used.`
+    }));
+    const automaticFooter = `Automatic line, touch attack, -2 to hit. Draws 10 charges. One attack roll against each creature in the line; concealment does not apply. No precision damage or Vital Strike. On a full attack, one burst per attack you have, and haste is at full BAB with the -2. Requires a Stage 3 or higher crystal. Critical 19–20/×2.`;
+    const autos = elementActions({
+      label: "Automatic", dice, range, increments, cone: false, cost: 10, critRange: 19,
+      touch: true, attackBonus: "-2", extraType: "standard", ray: true, footer: automaticFooter
+    });
+    actions.push(...shots, ...autos);
+    profiles.push(
+      ...shots.map(() => ({ dice, draw, scale: true, semi: true })),
+      ...autos.map(() => ({ dice, draw: 10, scale: true, automatic: true }))
+    );
+    firing = "<li><b>Firing:</b> Semi-automatic and touch. One shot is an attack. A full attack fires twice, both at -2. With Rapid Shot checked, every shot is -6 and Rapid Shot's extra attack is included. Haste still adds an attack at full BAB, with that same penalty.</li>";
+    firing += "<li><b>Automatic:</b> With a Stage 3 or higher crystal, an Automatic attack fires a line at -2 and spends 10 charges. Roll against each creature in the line. Concealment does not apply, and precision damage and Vital Strike do not apply. A full attack fires one burst per attack you have.</li>";
+  }
+
   const description = [
-    `<p>${name}. ${type}. Ammunition: a ${core} Mananite crystal.</p>`,
+    `<p>${name}. ${type}. Ammunition: a ${core} Mananite crystal. Attacks are touch attacks and threaten a critical hit on 19–20.</p>`,
     "<ul>",
     `<li><b>Chassis:</b> ${gp(chassis)}</li>`,
     `<li><b>Stage 1 Pristine core:</b> ${gp(corePrice)}</li>`,
     `<li><b>Starter cost:</b> ${gp(starter)}</li>`,
     `<li><b>Range:</b> ${rangeText}</li>`,
     `<li><b>Draw:</b> ${draw} charge${draw === 1 ? "" : "s"} per shot</li>`,
+    `<li><b>Critical:</b> 19–20/×2</li>`,
     `<li><b>Damage:</b> ${dice} dice. The die comes from the loaded crystal: ${qualityList()}.</li>`,
+    firing,
     "</ul>",
     "<p>Pick the energy type when you attack. Load the crystal in the ammunition list on the attack dialog. Critical Fail PF1e Utilities sets the damage die from that crystal and spends the draw from its charges.</p>"
   ].join("");
@@ -384,7 +477,9 @@ function casterGun(row, folderId, sort) {
     description,
     img: GUN_ICONS[frame],
     group: folderId,
-    runtime: gunRuntime(core, actions, actions.map(() => ({ dice, draw, scale: true })))
+    properties,
+    groups,
+    runtime: gunRuntime(core, actions, profiles)
   });
   item.sort = sort;
   return item;
@@ -407,7 +502,7 @@ function supercombineAction({ dice, footer }) {
       harmless: false
     },
     measureTemplate: { type: "circle", size: "5", color: "#7fd4ff" },
-    ammo: { type: "mananite", cost: 6 },
+    ammo: { type: "mananite", cost: 0 },
     notes: { footer: [footer] },
     extraAttacks: { type: "" }
   };
@@ -415,6 +510,19 @@ function supercombineAction({ dice, footer }) {
 
 function shardcaster(row, folderId, sort) {
   const [name, type, core, shard, combineDice, range, hands, chassis, corePrice, starter, frame] = row;
+  const shardCount = Number(shard.split("d")[0]);
+  const single = shotAction({
+    name: "Single Shot",
+    formula: shard,
+    types: ["piercing"],
+    range,
+    increments: 5,
+    cone: false,
+    footer: `One piercing shard. No attack penalty. Normal iterative attacks, and haste is at full BAB. Spends 1 charge. Critical 18–20/×2.`,
+    mananite: true,
+    cost: 1,
+    critRange: 18
+  });
   const burst = shotAction({
     name: "3-Round Burst",
     formula: shard,
@@ -422,37 +530,49 @@ function shardcaster(row, folderId, sort) {
     range,
     increments: 5,
     cone: false,
-    footer: `Three piercing shots. The second shot takes -1 to hit, and the third takes -2. Each shot spends 1 charge from the loaded ${core} Mananite crystal.`,
+    footer: `One 3-round burst is a standard action at a flat -3. All three rounds use that same penalty. A full attack fires one burst for each attack you have, including the -5 and -10 iterative attacks, and haste fires a burst at full BAB with the -3. No precision damage or Vital Strike. 1 charge per shard. Critical 18–20/×2.`,
     mananite: true,
-    cost: 1
+    cost: 1,
+    critRange: 18,
+    attackBonus: "-3"
   });
-  burst.extraAttacks = {
-    type: "custom",
-    manual: [
-      { name: "Second round", formula: "-1" },
-      { name: "Third round", formula: "-2" }
-    ]
-  };
+  const automatic = shotAction({
+    name: "Automatic",
+    formula: `${shardCount * 3}${shard.slice(shard.indexOf("d"))}`,
+    types: ["piercing"],
+    range,
+    increments: 5,
+    cone: false,
+    ray: true,
+    footer: `Stage 3 or higher. Line attack at -2, spending 30 charges. Each creature in the line takes one hit, and that hit deals 3 shards. Concealment does not apply. No precision damage or Vital Strike. On a full attack, one burst per attack you have. Critical 18–20/×2.`,
+    mananite: true,
+    cost: 30,
+    critRange: 18,
+    attackBonus: "-2"
+  });
   const combine = supercombineAction({
     dice: combineDice,
-    footer: `Force damage in a 5-foot burst. Reflex half (DC 10 + Dexterity modifier). Spends 6 charges. ${combineDice} dice, using the loaded crystal's quality.`
+    footer: `Force damage in a 5-foot burst. Reflex half (DC 10 + Dexterity modifier). No attack roll and no critical hit. Spends no additional charges. ${combineDice} dice, using the loaded crystal's quality.`
   });
-  const actions = [burst, combine];
+  const actions = [single, burst, automatic, combine];
   const description = [
-    `<p>${name}. ${type}. Ammunition: a ${core} Mananite crystal.</p>`,
+    `<p>${name}. ${type}. Ammunition: a ${core} Mananite crystal. This is not a touch weapon. Attack rolls threaten a critical hit on 18–20.</p>`,
     "<ul>",
     `<li><b>Chassis:</b> ${gp(chassis)}</li>`,
     `<li><b>Stage 1 Pristine core:</b> ${gp(corePrice)}</li>`,
     `<li><b>Starter cost:</b> ${gp(starter)}</li>`,
     `<li><b>Range:</b> ${range} ft.</li>`,
-    `<li><b>3-Round Burst:</b> ${shard} piercing. Three attacks at +0, -1, and -2. One charge per shot.</li>`,
-    `<li><b>Supercombine:</b> ${combineDice} force dice in a 5-foot burst, Reflex half. 6 charges. Die: ${qualityList()}.</li>`,
-    "</ul>",
-    "<p>There are two attacks. The burst is piercing. Supercombine does not make an attack roll; it deals force damage and calls for a Reflex save.</p>"
+    `<li><b>Single Shot:</b> ${shard} piercing. No penalty. Normal iterative attacks, and haste at full BAB. 1 charge.</li>`,
+    `<li><b>3-Round Burst:</b> ${shard} piercing at a flat -3 on every round. A standard action fires one burst. A full attack fires one burst per attack, so iterative attacks are at -5 and -10 on top of the -3, and haste is at full BAB with the -3. Precision damage and Vital Strike do not apply. 1 charge per shard.</li>`,
+    `<li><b>Automatic:</b> Stage 3 or higher. A line at -2 that spends 30 charges. Each target takes 3 shards (${shardCount * 3}${shard.slice(shard.indexOf("d"))}) on one hit. Concealment, precision damage, and Vital Strike do not apply.</li>`,
+    `<li><b>Supercombine:</b> ${combineDice} force dice in a 5-foot burst, Reflex half. No attack roll, no critical hit, and no additional charges. Die: ${qualityList()}.</li>`,
+    "</ul>"
   ].join("");
   const profiles = [
-    { dice: Number(shard.split("d")[0]), draw: 1, scale: false },
-    { dice: combineDice, draw: 6, scale: true }
+    { dice: shardCount, draw: 1, scale: false },
+    { dice: shardCount, draw: 1, scale: false, burst: true },
+    { dice: shardCount * 3, draw: 30, scale: false, automatic: true },
+    { dice: combineDice, draw: 0, scale: true }
   ];
   const item = weaponShell({
     name,
@@ -464,6 +584,7 @@ function shardcaster(row, folderId, sort) {
     description,
     img: SHARD_ICONS[frame],
     group: folderId,
+    properties: { ato: true },
     runtime: gunRuntime(core, actions, profiles)
   });
   item.sort = sort;
@@ -545,8 +666,14 @@ const shards = SHARDCASTERS.map((row, index) => shardcaster(row, shardFolder._id
 const sample = crystals.find((item) => item.name === "Tiny Marvelous Mananite (Stage 2)");
 console.log("crystals", crystals.length, "guns", guns.length, "shardcasters", shards.length);
 console.log("sample", sample.name, "unit price", sample.system.price, "quantity", sample.system.quantity, "unit weight", sample.system.weight.value);
-console.log("pistol attacks", guns[2].system.actions.length, guns[2].system.actions.map((action) => action.name).join(", "));
-console.log("shard attacks", shards[0].system.actions.map((action) => `${action.name} ${action.actionType} ${action.damage.parts[0].types.join("/")} ${action.damage.parts[0].formula}`).join(" | "));
+const service = guns.find((item) => item.name === "Service Caster Pistol");
+const rotary = guns.find((item) => item.name === "Rotary Caster");
+const field = guns.find((item) => item.name === "Field Caster Cannon");
+console.log("service", service.system.actions.map((action) => action.name).join(", "));
+console.log("service touch", service.system.actions[0].touch, "crit", service.system.actions[0].ability.critRange, "auto", service.system.actions[6].attackBonus, service.system.actions[6].ammo.cost);
+console.log("rotary", rotary.system.actions[0].activation.type, rotary.system.properties);
+console.log("field", field.system.actions[0].activation.type, field.system.weaponGroups.join(","));
+console.log("shard", shards[0].system.actions.map((action) => `${action.name} crit ${action.ability?.critRange ?? "none"} bonus ${action.attackBonus ?? ""} cost ${action.ammo?.cost} ${action.damage.parts[0].formula}`).join(" | "));
 console.log("crystal ammo", crystals[0].system.subType, crystals[0].system.extraType, crystals[0].flags[UTIL].mananiteCharge);
 
 if (DRY) process.exit(0);
