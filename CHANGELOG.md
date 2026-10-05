@@ -5,7 +5,8 @@ All notable changes to this project will be documented in this file.
 ## [1.4.6] - 2026-10-02
 
 - Shardcasters threaten on 18–20. Single Shot has no penalty. A 3-round burst is a standard action at a flat -3 on every round, and a full attack fires one burst per attack, including haste at full BAB. Burst damage ignores precision damage and Vital Strike. Supercombine does not crit and spends no charges. Stage 3 automatic is a line that spends 30 charges and hits each target with 3 shards.
-- Caster guns are touch attacks and still threaten on 19–20. Handheld guns are semi-automatic, and they can fire an automatic line only with a Stage 3 or higher crystal. The Rotary Caster is slow-firing. Field, Siege, and Grand casters use siege-engine load and aim times.
+- Caster guns are touch attacks and still threaten on 19–20. Handheld guns are semi-automatic, and they can fire an automatic line only with a Stage 3 or higher crystal. The Rotary Caster is slow-firing. Field, Siege, and Grand casters use siege-engine load and aim times. Caster guns add the wielder's spellcasting ability to damage and do not use Deadly Aim. Shardcasters keep Deadly Aim and add no ability damage. Both show on the Combat tab.
+- Mananite crystals are single items again. Their charge pool is the Charges value, and guns spend charges instead of quantity.
 - Graveknight, Graveking Atropus now has Muscular Reflexes instead of Combat Reflexes, matching the test module. That copy had no other new monsters or races.
 
 ## [1.4.5] - 2026-10-02

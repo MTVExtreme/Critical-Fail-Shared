@@ -193,10 +193,9 @@ function elementActions({ dice, formula, range, increments, cone, footer, label,
     increments,
     cone,
     footer,
-    mananite: true,
-    cost,
     critRange,
-    ...rest
+    ...rest,
+    mananite: false
   }));
 }
 
@@ -216,7 +215,7 @@ function crystalItem(size, quality, stage, folderId, sort) {
   const description = [
     `<p><em>Mananite crystal.</em> ${size.name}, ${quality.name} quality, ${stage.name} refinement. Introduced ${stage.year}.</p>`,
     "<ul>",
-    `<li><b>Charges:</b> ${capacity}. The item quantity is the remaining charges.</li>`,
+    `<li><b>Charges:</b> ${capacity}. Quantity stays 1. Firing a gun spends charges and leaves the crystal.</li>`,
     "<li><b>Charge use:</b> 1 when discharged directly</li>",
     `<li><b>Recharges (integrity):</b> ${quality.integrity}</li>`,
     `<li><b>Market value:</b> ${gp(value)}</li>`,
@@ -224,7 +223,7 @@ function crystalItem(size, quality, stage, folderId, sort) {
     `<li><b>Die:</b> ${die}</li>`,
     `<li><b>Discharge:</b> ${discharge}, ${blast}</li>`,
     "</ul>",
-    `<p>Mananite ammunition for a ${size.name} caster gun. Its quantity is the charge pool, and a shot spends the gun's draw from that quantity. The gun's damage die becomes ${die}. Discharging the crystal directly spends 1 charge.</p>`
+    `<p>Mananite for a ${size.name} caster gun. One crystal, with its charges tracked on the item. A shot spends the gun's draw from those charges. The gun's damage die becomes ${die}. Discharging the crystal directly spends 1 charge.</p>`
   ].join("");
   const footer = `Discharges 1 charge. ${discharge}, ${blast}.`;
   const actions = ELEMENTS.map(([type, element]) => {
@@ -261,20 +260,20 @@ function crystalItem(size, quality, stage, folderId, sort) {
     system: {
       description: { value: description, instructions: "" },
       tags: ["Mananite", size.name, quality.name, stage.name],
-      ...physical(value / Math.max(capacity, 1), size.weight / Math.max(capacity, 1), size.pf1),
-      quantity: capacity,
+      ...physical(value, size.weight, size.pf1),
+      quantity: 1,
       hp: { base: 5 },
       broken: false,
       hardness: 5,
-      subType: "ammo",
+      subType: "gear",
       extraType: "mananite",
       abundant: false,
       recoverChance: 0,
       uses: {
-        value: null,
-        per: "",
+        value: capacity,
+        per: "charges",
         autoDeductChargesCost: "1",
-        maxFormula: "",
+        maxFormula: String(capacity),
         rechargeFormula: ""
       },
       actions,
@@ -291,12 +290,12 @@ function crystalItem(size, quality, stage, folderId, sort) {
   };
 }
 
-function gunRuntime(coreSize, actions, profiles) {
+function gunRuntime(coreSize, actions, profiles, kind) {
   const byAction = {};
   actions.forEach((action, index) => {
     byAction[action._id] = profiles[index];
   });
-  return { coreSize, actions: byAction };
+  return { coreSize, kind, actions: byAction };
 }
 
 function weaponShell({ name, kind, hands, price, weight, actions, description, img, group, runtime, properties = {}, groups = ["firearms"] }) {
@@ -338,7 +337,7 @@ function weaponShell({ name, kind, hands, price, weight, actions, description, i
       enh: null,
       proficient: false,
       held: hands === 1 ? "1h" : "2h",
-      ammo: { type: "mananite", capacity: null, misfire: null, explode: null },
+      ammo: { type: "", capacity: null, misfire: null, explode: null },
       subType: "exotic",
       weaponSubtype: "ranged",
       hands,
@@ -347,6 +346,7 @@ function weaponShell({ name, kind, hands, price, weight, actions, description, i
       material: { base: { value: "steel", custom: false }, normal: { value: "", custom: false }, addon: [] },
       properties,
       showInQuickbar: true,
+      showInCombat: true,
       sources: []
     },
     _stats: stats()
@@ -463,9 +463,10 @@ function casterGun(row, folderId, sort) {
     `<li><b>Draw:</b> ${draw} charge${draw === 1 ? "" : "s"} per shot</li>`,
     `<li><b>Critical:</b> 19–20/×2</li>`,
     `<li><b>Damage:</b> ${dice} dice. The die comes from the loaded crystal: ${qualityList()}.</li>`,
+    "<li><b>Damage bonus:</b> Your spellcasting ability modifier when you have a spellbook in use. No bonus otherwise. Deadly Aim does not apply.</li>",
     firing,
     "</ul>",
-    "<p>Pick the energy type when you attack. Load the crystal in the ammunition list on the attack dialog. Critical Fail PF1e Utilities sets the damage die from that crystal and spends the draw from its charges.</p>"
+    "<p>Pick the energy type when you attack. Choose the crystal in the ammunition list. Critical Fail PF1e Utilities sets the damage die from that crystal and spends the draw from its charges. The crystal's quantity stays 1.</p>"
   ].join("");
   const item = weaponShell({
     name,
@@ -479,7 +480,7 @@ function casterGun(row, folderId, sort) {
     group: folderId,
     properties,
     groups,
-    runtime: gunRuntime(core, actions, profiles)
+    runtime: gunRuntime(core, actions, profiles, "caster-gun")
   });
   item.sort = sort;
   return item;
@@ -502,7 +503,6 @@ function supercombineAction({ dice, footer }) {
       harmless: false
     },
     measureTemplate: { type: "circle", size: "5", color: "#7fd4ff" },
-    ammo: { type: "mananite", cost: 0 },
     notes: { footer: [footer] },
     extraAttacks: { type: "" }
   };
@@ -519,7 +519,7 @@ function shardcaster(row, folderId, sort) {
     increments: 5,
     cone: false,
     footer: `One piercing shard. No attack penalty. Normal iterative attacks, and haste is at full BAB. Spends 1 charge. Critical 18–20/×2.`,
-    mananite: true,
+    mananite: false,
     cost: 1,
     critRange: 18
   });
@@ -531,7 +531,7 @@ function shardcaster(row, folderId, sort) {
     increments: 5,
     cone: false,
     footer: `One 3-round burst is a standard action at a flat -3. All three rounds use that same penalty. A full attack fires one burst for each attack you have, including the -5 and -10 iterative attacks, and haste fires a burst at full BAB with the -3. No precision damage or Vital Strike. 1 charge per shard. Critical 18–20/×2.`,
-    mananite: true,
+    mananite: false,
     cost: 1,
     critRange: 18,
     attackBonus: "-3"
@@ -545,7 +545,7 @@ function shardcaster(row, folderId, sort) {
     cone: false,
     ray: true,
     footer: `Stage 3 or higher. Line attack at -2, spending 30 charges. Each creature in the line takes one hit, and that hit deals 3 shards. Concealment does not apply. No precision damage or Vital Strike. On a full attack, one burst per attack you have. Critical 18–20/×2.`,
-    mananite: true,
+    mananite: false,
     cost: 30,
     critRange: 18,
     attackBonus: "-2"
@@ -562,7 +562,7 @@ function shardcaster(row, folderId, sort) {
     `<li><b>Stage 1 Pristine core:</b> ${gp(corePrice)}</li>`,
     `<li><b>Starter cost:</b> ${gp(starter)}</li>`,
     `<li><b>Range:</b> ${range} ft.</li>`,
-    `<li><b>Single Shot:</b> ${shard} piercing. No penalty. Normal iterative attacks, and haste at full BAB. 1 charge.</li>`,
+    `<li><b>Single Shot:</b> ${shard} piercing. No penalty. Normal iterative attacks, and haste at full BAB. 1 charge. Deadly Aim applies. No ability modifier to damage.</li>`,
     `<li><b>3-Round Burst:</b> ${shard} piercing at a flat -3 on every round. A standard action fires one burst. A full attack fires one burst per attack, so iterative attacks are at -5 and -10 on top of the -3, and haste is at full BAB with the -3. Precision damage and Vital Strike do not apply. 1 charge per shard.</li>`,
     `<li><b>Automatic:</b> Stage 3 or higher. A line at -2 that spends 30 charges. Each target takes 3 shards (${shardCount * 3}${shard.slice(shard.indexOf("d"))}) on one hit. Concealment, precision damage, and Vital Strike do not apply.</li>`,
     `<li><b>Supercombine:</b> ${combineDice} force dice in a 5-foot burst, Reflex half. No attack roll, no critical hit, and no additional charges. Die: ${qualityList()}.</li>`,
@@ -585,7 +585,7 @@ function shardcaster(row, folderId, sort) {
     img: SHARD_ICONS[frame],
     group: folderId,
     properties: { ato: true },
-    runtime: gunRuntime(core, actions, profiles)
+    runtime: gunRuntime(core, actions, profiles, "shardcaster")
   });
   item.sort = sort;
   return item;
@@ -664,13 +664,12 @@ for (const size of SIZES) {
 const guns = CASTER_GUNS.map((row, index) => casterGun(row, gunFolder._id, index));
 const shards = SHARDCASTERS.map((row, index) => shardcaster(row, shardFolder._id, index));
 const sample = crystals.find((item) => item.name === "Tiny Marvelous Mananite (Stage 2)");
-console.log("crystals", crystals.length, "guns", guns.length, "shardcasters", shards.length);
-console.log("sample", sample.name, "unit price", sample.system.price, "quantity", sample.system.quantity, "unit weight", sample.system.weight.value);
 const service = guns.find((item) => item.name === "Service Caster Pistol");
 const rotary = guns.find((item) => item.name === "Rotary Caster");
 const field = guns.find((item) => item.name === "Field Caster Cannon");
-console.log("service", service.system.actions.map((action) => action.name).join(", "));
-console.log("service touch", service.system.actions[0].touch, "crit", service.system.actions[0].ability.critRange, "auto", service.system.actions[6].attackBonus, service.system.actions[6].ammo.cost);
+console.log("crystals", crystals.length, "guns", guns.length, "shardcasters", shards.length);
+console.log("sample", sample.name, "price", sample.system.price, "qty", sample.system.quantity, "weight", sample.system.weight.value, "charges", sample.system.uses.value, sample.system.uses.per);
+console.log("service touch", service.system.actions[0].touch, "crit", service.system.actions[0].ability.critRange, "ammo", service.system.ammo.type, "combat", service.system.showInCombat, "kind", service.flags[UTIL].mananiteGun.kind);
 console.log("rotary", rotary.system.actions[0].activation.type, rotary.system.properties);
 console.log("field", field.system.actions[0].activation.type, field.system.weaponGroups.join(","));
 console.log("shard", shards[0].system.actions.map((action) => `${action.name} crit ${action.ability?.critRange ?? "none"} bonus ${action.attackBonus ?? ""} cost ${action.ammo?.cost} ${action.damage.parts[0].formula}`).join(" | "));
