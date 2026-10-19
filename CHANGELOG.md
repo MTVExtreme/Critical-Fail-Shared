@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.7] - 2026-10-18
+
+- Added the Astral Sphinx, guardian of the Grand Archive: a CR 23 construct with a 1,000-point astral shield, spell reflection, fire and electricity responses, EMP disruption, and restrained nonlethal attacks. Critical Fail PF1e Utilities 0.4.0 runs those rules and draws the shield over a Boss Bar.
+- Monster compendium synced from the Test server first, so creatures added there since 1.4.6 stay in this version.
+
 ## [1.4.6] - 2026-10-02
 
 - Shardcasters threaten on 18–20. Single Shot has no penalty. A 3-round burst is a standard action at a flat -3 on every round, and a full attack fires one burst per attack, including haste at full BAB. Burst damage ignores precision damage and Vital Strike. Supercombine does not crit and spends no charges. Stage 3 automatic is a line that spends 30 charges and hits each target with 3 shards.
