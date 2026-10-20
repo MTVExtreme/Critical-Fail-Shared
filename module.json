@@ -2,7 +2,7 @@
   "title": "Critical Fail Shared Compedium",
   "description": "Sharing data across our universe, including Spheres of Guile talents, Spheres feats, and Spheres items.",
   "author": "MTVExtreme",
-  "version": "1.4.7",
+  "version": "14.0.0",
   "authors": [
     {
       "name": "MTVExtreme",
@@ -28,19 +28,11 @@
     {
       "name": "Zavex Capricious",
       "discord": "zavexcapricious"
-    },
-    {
-      "name": "Aurelian Elegy",
-      "discord": "aurelian_elegy"
-    },
-    {
-      "name": "SlumberingLullaby",
-      "discord": "slumberinglullaby"
     }
   ],
   "url": "https://github.com/MTVExtreme/Critical-Fail-Shared",
   "manifest": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/latest/download/module.json",
-  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v1.4.7/module.zip",
+  "download": "https://github.com/MTVExtreme/Critical-Fail-Shared/releases/download/v14.0.0/module.zip",
   "readme": "https://raw.githubusercontent.com/MTVExtreme/Critical-Fail-Shared/main/README.md",
   "changelog": "https://raw.githubusercontent.com/MTVExtreme/Critical-Fail-Shared/main/CHANGELOG.md",
   "packs": [
@@ -187,9 +179,9 @@
   "minimumSystemVersion": "11.0",
   "id": "critical-fail-shared",
   "compatibility": {
-    "minimum": "12",
-    "verified": "13",
-    "maximum":  "13"
+    "minimum": "14",
+    "verified": "14",
+    "maximum": "14"
   },
   "flags": {
 		"canUpload": true

@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [14.0.0] - 2026-10-20
+
+- Foundry V14 release. The first version number is the Foundry generation.
+- Compendium manifest now allows Foundry 14 only.
+
 ## [1.4.7] - 2026-10-18
 
 - Added the Astral Sphinx, guardian of the Grand Archive: a CR 23 construct with a 1,000-point astral shield, spell reflection, fire and electricity responses, EMP disruption, and restrained nonlethal attacks. Critical Fail PF1e Utilities 0.4.0 runs those rules and draws the shield over a Boss Bar.
