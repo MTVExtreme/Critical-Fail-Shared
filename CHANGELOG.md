@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.4.11] - 2026-11-17
+
+- Added the beholderkin that were on the Test server but missing from 1.4.10: Eye of Flame, Eye of Frost, Eye of Chaos, Spectator, Lesser Spectator, Warped Spectator, Warped Death Kiss, Gauth, Gazer, Gazer Swarm, Gorbel, Gorbel Swarm, Gouger, and Clockwork Beholder, with their portraits and tokens.
+- Added Maat Amalgamate, Vessel of the Aten, and the Shining Child from the Test server. The Shining Child still uses its Pathfinder token-pack portrait.
+
 ## [1.4.10] - 2026-11-17
 
 - Added the Voremind, a living aberrant plague, in its own folder: Fleshseed, Broodburster, The Reclaimed, Skitterfiend, Thornspitter, Fleshbulwark (plus a variant with its own art), Colossus of Flesh, Broodmind, and The Thousandfold Mind (CR 1 to 18), with portraits and tokens. Their recurring abilities are Assimilating Blight, Synaptic Communion, Collective Immunity, Living Reconstruction, and Adaptive Morphogenesis. Grand Archive scholars knew the outbreak as the Carrion Bloom.
