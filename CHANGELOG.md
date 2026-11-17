@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+## [1.4.10] - 2026-11-17
+
+- Added the Voremind, a living aberrant plague, in its own folder: Fleshseed, Broodburster, The Reclaimed, Skitterfiend, Thornspitter, Fleshbulwark (plus a variant with its own art), Colossus of Flesh, Broodmind, and The Thousandfold Mind (CR 1 to 18), with portraits and tokens. Their recurring abilities are Assimilating Blight, Synaptic Communion, Collective Immunity, Living Reconstruction, and Adaptive Morphogenesis. Grand Archive scholars knew the outbreak as the Carrion Bloom.
+- Added portraits and tokens for the Astral Sphinx, Lamia, Grisgol, Cacto, Cacto Giganto, Marauding Vault, and both Solar Purifier war machines.
+
+## [1.4.9] - 2026-10-28
+
+- Added the rest of the Grand Archive's frozen population: Mananite Scarab Swarm, Mnemonic Moth, Living Ink, Lesser Archive Sphinx, Celestial Ibis, Stasis-Woken Scholar, Deathless Notary, Prism Jackal, Sarcophagus Crocodile, Whispering Serpent, Bibliophage, and the contained Story Eater. Prism Jackals and the crocodile carry Mananite shield pools.
+
+## [1.4.8] - 2026-10-28
+
+- Added Grand Archive dungeon creatures under Grand Archive: Canopic Sentry, Index Hound, Shelf Librarian, Atrium Keeper, Silence Warden, Scroll Warden, Archivist Shade, Mananite Sentinel, and Vault Colossus. The Astral Sphinx remains the hall's guardian.
+
 ## [1.4.7] - 2026-10-18
 
 - Added the Astral Sphinx, guardian of the Grand Archive: a CR 23 construct with a 1,000-point astral shield, spell reflection, fire and electricity responses, EMP disruption, and restrained nonlethal attacks. Critical Fail PF1e Utilities 0.4.0 runs those rules and draws the shield over a Boss Bar.

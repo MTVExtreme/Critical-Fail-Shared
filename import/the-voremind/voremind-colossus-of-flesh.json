@@ -1,0 +1,3780 @@
+{
+  "_id": "CfFloodJuggern07",
+  "name": "Colossus of Flesh",
+  "type": "npc",
+  "img": "modules/critical-fail-shared/img/creatures/voremind/colossus-of-flesh.webp",
+  "items": [
+    {
+      "_id": "mGRAM85GIjL2H8mr",
+      "name": "Aberration",
+      "type": "class",
+      "img": "systems/pf1/icons/skills/yellow_25.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 10000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>17 racial Hit Dice, d8, three-quarter base attack, good Will. The 77 hit points here are the dice before Constitution and Toughness.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [],
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [
+          {
+            "text": "+8 Stealth in lair",
+            "target": "skill.ste"
+          }
+        ],
+        "links": "",
+        "tag": "aberration",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "base",
+        "level": 17,
+        "hd": 8,
+        "hp": 77,
+        "bab": "med",
+        "skillsPerLevel": 4,
+        "savingThrows": {
+          "fort": {
+            "value": "low"
+          },
+          "ref": {
+            "value": "low"
+          },
+          "will": {
+            "value": "high"
+          }
+        },
+        "fc": {
+          "hp": {
+            "value": 0
+          },
+          "skill": {
+            "value": 0
+          },
+          "alt": {
+            "value": 0,
+            "notes": ""
+          }
+        },
+        "wealth": "",
+        "alignment": "",
+        "classSkills": {
+          "acr": true,
+          "apr": false,
+          "art": false,
+          "blf": false,
+          "clm": true,
+          "crf": false,
+          "dip": false,
+          "dev": false,
+          "dis": false,
+          "esc": true,
+          "fly": true,
+          "han": false,
+          "hea": false,
+          "int": true,
+          "kar": false,
+          "kdu": false,
+          "ken": false,
+          "kge": false,
+          "khi": false,
+          "klo": false,
+          "kna": false,
+          "kno": false,
+          "kpl": false,
+          "kre": false,
+          "lin": false,
+          "lor": false,
+          "per": true,
+          "prf": false,
+          "pro": false,
+          "rid": false,
+          "sen": false,
+          "slt": false,
+          "spl": true,
+          "ste": true,
+          "sur": true,
+          "swm": true,
+          "umd": false
+        },
+        "conditionals": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "veLc2uXfJptFuVGw",
+      "name": "Aberration (Voremind)",
+      "type": "race",
+      "img": "systems/pf1/icons/skills/yellow_25.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 20000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Living parasitic aberration. The voremind subtype marks the same species. Not undead.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [],
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": []
+        },
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "size": "med",
+        "speeds": {
+          "land": null,
+          "fly": null,
+          "flyManeuverability": "",
+          "swim": null,
+          "climb": null,
+          "burrow": null
+        },
+        "creatureTypes": [
+          "aberration"
+        ],
+        "creatureSubtypes": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "hjAOWChU2C8PeuHb",
+      "name": "Voremind Traits",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 30000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<h2>The Voremind</h2><p>The Voremind are not creatures of death. They are life stripped of individuality, a biological consciousness that views all living things as incomplete pieces of itself.</p><p>Unlike the undead, the Voremind do not raise corpses through necromancy. They consume and reconstruct organic material, weaving living tissue into entirely new organisms.</p><p>Their most terrifying trait is that they keep the memories of the creatures they assimilate. As their numbers grow, so does their collective intelligence.</p><p>Ancient scholars of the Grand Archive called the outbreak <em>the Carrion Bloom</em>. They believed they were containing a disease. What they actually imprisoned was an intelligent species.</p><p>Every Voremind creature is a living aberration, not undead. Positive energy heals it. Negative energy harms it. Undead-only effects, including channel energy against undead, do not treat it as undead. It is immune to Assimilating Blight and not immune to other diseases. It can be critically hit, sneaked, poisoned, and affected by mind-affecting effects unless a statblock says otherwise.</p>\n<p><strong>Assimilating Blight</strong> is an extraordinary biological disease. Injury or inhaled, as the attack says. Onset 1 round, frequency 1/round for 6 rounds, 1d2 Constitution and 1d2 Wisdom damage, sickened for 1 round on a failed save, cure 2 consecutive saves. A creature that dies infected, or whose Constitution or Wisdom reaches 0 from the disease, becomes one of the Reclaimed after 1d4 rounds if the body is intact. <em>Remove disease</em> or <em>heal</em> ends the blight before that change. After the change, the creature is a new aberration.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "xnJsHYCBEfNcDFKC",
+      "name": "Synaptic Communion",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 40000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Voremind within 300 feet share senses. This creature is also a Neural Overseer: allied Voremind within 60 feet gain +2 insight on attack and damage rolls while it can act.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "9YiXuxW1EpHFuT2z",
+      "name": "Cleave",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 50000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Cleave.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "7TDTOv34hGp1yDVP",
+      "name": "Combat Reflexes",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 60000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Combat Reflexes.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "gcG2nzGEL0KwhGxF",
+      "name": "Great Cleave",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 70000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Great Cleave.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "ngIdOAe34CZrgkrk",
+      "name": "Improved Bull Rush",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 80000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Improved Bull Rush.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "OoTFzLQHUm7EB2Gu",
+      "name": "Improved Initiative",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 90000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Improved Initiative.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [
+          {
+            "_id": "ex2BMNII",
+            "formula": "4",
+            "operator": "add",
+            "priority": 0,
+            "target": "init",
+            "type": "untyped"
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "TW969p7FVLS3mR4m",
+      "name": "Iron Will",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Iron Will.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [
+          {
+            "_id": "OhAaiOUz",
+            "formula": "2",
+            "operator": "add",
+            "priority": 0,
+            "target": "will",
+            "type": "untyped"
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "mnSniTrt2SqzhCfw",
+      "name": "Power Attack",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 110000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Power Attack.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "pVgJ0O5qdOwNtDNV",
+      "name": "Toughness",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 120000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Toughness.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [
+          {
+            "_id": "qK2r4QB0",
+            "formula": "max(3, @attributes.hd.total)",
+            "operator": "add",
+            "priority": 0,
+            "target": "mhp",
+            "type": "untyped"
+          }
+        ],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "Qz5rD5lDI1T5Ifpx",
+      "name": "Weapon Focus (slam)",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 130000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Weapon Focus (slam).</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "6VDpD3CwPyFlHUjX",
+      "name": "Voremind Adaptations",
+      "type": "feat",
+      "img": "systems/pf1/icons/skills/blood_04.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 140000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p><strong>Overwhelming strike.</strong> Once a round, if both slams hit the same creature, it may bull rush or trip that creature without provoking.</p><p><strong>Constrict.</strong> A tendril grapple deals 2d8+11 bludgeoning. Grapple CMB is +29 with the tendrils.</p><p><strong>Parasitic tendrils.</strong> Tendril damage, Fortitude DC 26 or Assimilating Blight.</p><p><strong>Living Reconstruction.</strong> Fast healing 10, suppressed until the end of its next turn after it takes fire or acid.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [
+          "PFS",
+          "General"
+        ],
+        "actions": [],
+        "attackNotes": [],
+        "effectNotes": [],
+        "uses": {
+          "value": 0,
+          "per": null,
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": "",
+          "max": 0
+        },
+        "changes": [],
+        "changeFlags": {
+          "immuneToMorale": false,
+          "loseDexToAC": false,
+          "noMediumEncumbrance": false,
+          "noHeavyEncumbrance": false,
+          "mediumArmorFullSpeed": false,
+          "heavyArmorFullSpeed": false,
+          "lowLightVision": false,
+          "seeInvisibility": false,
+          "seeInDarkness": false,
+          "noStr": false,
+          "noDex": false,
+          "oneInt": false,
+          "oneWis": false,
+          "oneCha": false
+        },
+        "contextNotes": [],
+        "links": {
+          "children": [],
+          "charges": []
+        },
+        "tag": "",
+        "armorProf": [],
+        "weaponProf": [],
+        "languages": [],
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "scriptCalls": [],
+        "subType": "feat",
+        "traitType": "",
+        "traitCategory": "",
+        "racePoints": null,
+        "abilityType": "na",
+        "associations": {
+          "classes": []
+        },
+        "showInQuickbar": false,
+        "crOffset": "",
+        "inherited": false,
+        "acquired": false,
+        "simple": false,
+        "summons": false,
+        "disabled": false,
+        "classSkills": {},
+        "nonlethal": false,
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": null,
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "attack": {
+          "parts": []
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "kuZ3qp1G7WG2SQzz",
+      "name": "Slam",
+      "type": "attack",
+      "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 150000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Reach 15 feet. Weapon Focus is included.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [],
+        "actions": [
+          {
+            "_id": "PWj6A9OgB17g9qzS",
+            "name": "Slam",
+            "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "attack",
+              "unchained": {
+                "cost": 1,
+                "type": "attack"
+              }
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "range": {
+              "units": "melee"
+            },
+            "uses": {},
+            "attackName": "Slam",
+            "actionType": "mwak",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d10",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "powerAttack": {
+              "multiplier": 0,
+              "damageBonus": 2,
+              "critMultiplier": 1
+            },
+            "naturalAttack": {
+              "secondary": {
+                "attackBonus": "-5",
+                "damageMult": 0.5
+              },
+              "primary": true
+            },
+            "ammo": {
+              "cost": 1
+            },
+            "notes": {
+              "effect": [],
+              "footer": [
+                "slam +22 (2d10+11), reach 15 ft."
+              ]
+            },
+            "attackBonus": "+1",
+            "extraAttacks": {
+              "type": "custom",
+              "formula": {},
+              "manual": []
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": [],
+          "charges": [],
+          "ammunition": []
+        },
+        "tag": "",
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "uses": {
+          "value": 0,
+          "per": "",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "scriptCalls": [],
+        "masterwork": false,
+        "enh": null,
+        "proficient": true,
+        "held": null,
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "Slam",
+        "attackBonus": "+1",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              "B, P, and S"
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": ""
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "nonlethal": false,
+        "conditionals": [],
+        "usesAmmo": false,
+        "spellArea": "",
+        "size": "med",
+        "weapon": {
+          "category": "",
+          "type": ""
+        },
+        "material": {
+          "base": {
+            "value": "",
+            "custom": false
+          },
+          "normal": {
+            "value": "",
+            "custom": false
+          },
+          "addon": []
+        },
+        "alignments": {
+          "lawful": false,
+          "chaotic": false,
+          "good": false,
+          "evil": false
+        },
+        "class": ""
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "vpDF4KlUVTgZeTS6",
+      "name": "Slam",
+      "type": "attack",
+      "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 160000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [],
+        "actions": [
+          {
+            "_id": "TQcrVLdYBafiBrbB",
+            "name": "Slam",
+            "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "attack",
+              "unchained": {
+                "cost": 1,
+                "type": "attack"
+              }
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "range": {
+              "units": "melee"
+            },
+            "uses": {},
+            "attackName": "Slam",
+            "actionType": "mwak",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d10",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "powerAttack": {
+              "multiplier": 0,
+              "damageBonus": 2,
+              "critMultiplier": 1
+            },
+            "naturalAttack": {
+              "secondary": {
+                "attackBonus": "-5",
+                "damageMult": 0.5
+              },
+              "primary": true
+            },
+            "ammo": {
+              "cost": 1
+            },
+            "notes": {
+              "effect": [],
+              "footer": [
+                "slam +22 (2d10+11)"
+              ]
+            },
+            "attackBonus": "+1",
+            "extraAttacks": {
+              "type": "custom",
+              "formula": {},
+              "manual": []
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": [],
+          "charges": [],
+          "ammunition": []
+        },
+        "tag": "",
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "uses": {
+          "value": 0,
+          "per": "",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "scriptCalls": [],
+        "masterwork": false,
+        "enh": null,
+        "proficient": true,
+        "held": null,
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "Slam",
+        "attackBonus": "+1",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              "B, P, and S"
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": ""
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "nonlethal": false,
+        "conditionals": [],
+        "usesAmmo": false,
+        "spellArea": "",
+        "size": "med",
+        "weapon": {
+          "category": "",
+          "type": ""
+        },
+        "material": {
+          "base": {
+            "value": "",
+            "custom": false
+          },
+          "normal": {
+            "value": "",
+            "custom": false
+          },
+          "addon": []
+        },
+        "alignments": {
+          "lawful": false,
+          "chaotic": false,
+          "good": false,
+          "evil": false
+        },
+        "class": ""
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "onpa5BhMW7HBSYPB",
+      "name": "Tendril",
+      "type": "attack",
+      "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 170000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Reach 25 feet. Secondary attack, grab. Assimilating Blight Fortitude DC 26.</p>",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [],
+        "actions": [
+          {
+            "_id": "QuxKRbrkK6jobGgl",
+            "name": "Tendril",
+            "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "attack",
+              "unchained": {
+                "cost": 1,
+                "type": "attack"
+              }
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "range": {
+              "units": "melee"
+            },
+            "uses": {},
+            "attackName": "Tendril",
+            "actionType": "mwak",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "powerAttack": {
+              "multiplier": 0,
+              "damageBonus": 2,
+              "critMultiplier": 1
+            },
+            "naturalAttack": {
+              "secondary": {
+                "attackBonus": "-5",
+                "damageMult": 0.5
+              },
+              "primary": false
+            },
+            "ammo": {
+              "cost": 1
+            },
+            "notes": {
+              "effect": [],
+              "footer": [
+                "tendril +16 (2d8+5 plus grab), reach 25 ft."
+              ]
+            },
+            "attackBonus": "0",
+            "extraAttacks": {
+              "type": "custom",
+              "formula": {},
+              "manual": []
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": [],
+          "charges": [],
+          "ammunition": []
+        },
+        "tag": "",
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "uses": {
+          "value": 0,
+          "per": "",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "scriptCalls": [],
+        "masterwork": false,
+        "enh": null,
+        "proficient": true,
+        "held": null,
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "Tendril",
+        "attackBonus": "0",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              "B, P, and S"
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": ""
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "nonlethal": false,
+        "conditionals": [],
+        "usesAmmo": false,
+        "spellArea": "",
+        "size": "med",
+        "weapon": {
+          "category": "",
+          "type": ""
+        },
+        "material": {
+          "base": {
+            "value": "",
+            "custom": false
+          },
+          "normal": {
+            "value": "",
+            "custom": false
+          },
+          "addon": []
+        },
+        "alignments": {
+          "lawful": false,
+          "chaotic": false,
+          "good": false,
+          "evil": false
+        },
+        "class": ""
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "GgvmtifZDDR0F4qC",
+      "name": "Tendril",
+      "type": "attack",
+      "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
+      "effects": [],
+      "folder": null,
+      "sort": 180000,
+      "flags": {
+        "core": {},
+        "pf1": {
+          "migration": "11.11"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "",
+          "instructions": "",
+          "unidentified": ""
+        },
+        "tags": [],
+        "actions": [
+          {
+            "_id": "CqPBEFKYDyQpcC27",
+            "name": "Tendril",
+            "img": "systems/pf1/icons/items/inventory/monster-head.jpg",
+            "activation": {
+              "cost": 1,
+              "type": "attack",
+              "unchained": {
+                "cost": 1,
+                "type": "attack"
+              }
+            },
+            "duration": {
+              "units": "inst"
+            },
+            "range": {
+              "units": "melee"
+            },
+            "uses": {},
+            "attackName": "Tendril",
+            "actionType": "mwak",
+            "damage": {
+              "parts": [
+                {
+                  "formula": "2d8",
+                  "types": [
+                    "bludgeoning"
+                  ]
+                }
+              ]
+            },
+            "ability": {
+              "attack": "str",
+              "damage": "str",
+              "damageMult": 1,
+              "critRange": 20,
+              "critMult": 2
+            },
+            "powerAttack": {
+              "multiplier": 0,
+              "damageBonus": 2,
+              "critMultiplier": 1
+            },
+            "naturalAttack": {
+              "secondary": {
+                "attackBonus": "-5",
+                "damageMult": 0.5
+              },
+              "primary": false
+            },
+            "ammo": {
+              "cost": 1
+            },
+            "notes": {
+              "effect": [],
+              "footer": [
+                "tendril +16 (2d8+5 plus grab)"
+              ]
+            },
+            "attackBonus": "0",
+            "extraAttacks": {
+              "type": "custom",
+              "formula": {},
+              "manual": []
+            }
+          }
+        ],
+        "attackNotes": [],
+        "effectNotes": [],
+        "links": {
+          "children": [],
+          "charges": [],
+          "ammunition": []
+        },
+        "tag": "",
+        "flags": {
+          "boolean": {},
+          "dictionary": {}
+        },
+        "uses": {
+          "value": 0,
+          "per": "",
+          "autoDeductChargesCost": "1",
+          "maxFormula": "",
+          "rechargeFormula": ""
+        },
+        "scriptCalls": [],
+        "masterwork": false,
+        "enh": null,
+        "proficient": true,
+        "held": null,
+        "ammo": {
+          "type": "",
+          "capacity": null,
+          "misfire": null,
+          "explode": null
+        },
+        "subType": "natural",
+        "baseTypes": [],
+        "broken": false,
+        "weaponGroups": [],
+        "showInQuickbar": true,
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "attackName": "Tendril",
+        "attackBonus": "0",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              "B, P, and S"
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": ""
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "nonlethal": false,
+        "conditionals": [],
+        "usesAmmo": false,
+        "spellArea": "",
+        "size": "med",
+        "weapon": {
+          "category": "",
+          "type": ""
+        },
+        "material": {
+          "base": {
+            "value": "",
+            "custom": false
+          },
+          "normal": {
+            "value": "",
+            "custom": false
+          },
+          "addon": []
+        },
+        "alignments": {
+          "lawful": false,
+          "chaotic": false,
+          "good": false,
+          "evil": false
+        },
+        "class": ""
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": "pf1",
+        "systemVersion": "11.11",
+        "coreVersion": "13.351",
+        "createdTime": 1794076883523,
+        "modifiedTime": 1794076883523,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": "CfFloodFolder001",
+  "flags": {
+    "core": {},
+    "pf1": {
+      "migration": "11.11"
+    }
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 32,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "dex": {
+        "value": 10,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "con": {
+        "value": 26,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "int": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "wis": {
+        "value": 16,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      },
+      "cha": {
+        "value": 8,
+        "damage": 0,
+        "drain": 0,
+        "userPenalty": 0
+      }
+    },
+    "attributes": {
+      "hpAbility": "con",
+      "cmbAbility": "str",
+      "naturalAC": 19,
+      "ac": {
+        "normal": {
+          "ability": "dex"
+        },
+        "touch": {
+          "ability": "dex"
+        },
+        "flatFooted": {}
+      },
+      "cmd": {
+        "strAbility": "str",
+        "dexAbility": "dex"
+      },
+      "sr": {
+        "formula": ""
+      },
+      "clCheck": false,
+      "saveNotes": "",
+      "acNotes": "CR 12. Natural armor 19. Size and Dexterity are applied by the sheet.",
+      "cmdNotes": "21 vs. trip",
+      "srNotes": "",
+      "attack": {
+        "meleeAbility": "str",
+        "rangedAbility": "dex"
+      },
+      "energyDrain": 0,
+      "quadruped": true,
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "ability": "con"
+        },
+        "ref": {
+          "base": 0,
+          "ability": "dex"
+        },
+        "will": {
+          "base": 0,
+          "ability": "wis"
+        }
+      },
+      "hp": {
+        "temp": 0,
+        "nonlethal": 0,
+        "offset": 0
+      },
+      "wounds": {
+        "offset": 0,
+        "base": 0,
+        "min": 0,
+        "max": 0
+      },
+      "vigor": {
+        "temp": 0,
+        "offset": 0,
+        "base": 0,
+        "min": 0,
+        "max": 0
+      },
+      "init": {
+        "value": 0,
+        "ability": "dex"
+      },
+      "speed": {
+        "land": {
+          "base": 30
+        },
+        "climb": {
+          "base": 20
+        },
+        "swim": {
+          "base": 0
+        },
+        "burrow": {
+          "base": 0
+        },
+        "fly": {
+          "base": 0,
+          "maneuverability": "average"
+        }
+      },
+      "spells": {
+        "spellbooks": {
+          "primary": {
+            "name": "Primary",
+            "inUse": false,
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false,
+              "value": 0,
+              "maxFormula": "",
+              "restoreFormula": ""
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1,
+            "altName": ""
+          },
+          "secondary": {
+            "name": "Secondary",
+            "inUse": false,
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false,
+              "value": 0,
+              "maxFormula": "",
+              "restoreFormula": ""
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1,
+            "altName": ""
+          },
+          "tertiary": {
+            "name": "Tertiary",
+            "inUse": false,
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "",
+            "cl": {
+              "formula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "clNotes": "",
+            "ability": "int",
+            "autoSpellLevelCalculation": true,
+            "autoSpellLevels": true,
+            "psychic": false,
+            "arcaneSpellFailure": true,
+            "hasCantrips": true,
+            "spellPreparationMode": "spontaneous",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false,
+              "value": 0,
+              "maxFormula": "",
+              "restoreFormula": ""
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1,
+            "altName": ""
+          },
+          "spelllike": {
+            "name": "Spell-likes",
+            "inUse": false,
+            "castPerDayAllOffsetFormula": "",
+            "preparedAllOffsetFormula": "",
+            "casterType": "high",
+            "class": "_hd",
+            "cl": {
+              "formula": "",
+              "autoSpellLevelCalculationFormula": ""
+            },
+            "concentrationFormula": "",
+            "concentrationNotes": "+22 casting defensively",
+            "clNotes": "",
+            "ability": "cha",
+            "autoSpellLevelCalculation": false,
+            "autoSpellLevels": false,
+            "psychic": false,
+            "arcaneSpellFailure": false,
+            "hasCantrips": false,
+            "spellPreparationMode": "prepared",
+            "baseDCFormula": "10 + @sl + @ablMod",
+            "spellPoints": {
+              "useSystem": false,
+              "value": 0,
+              "maxFormula": "",
+              "restoreFormula": ""
+            },
+            "spells": {
+              "spell0": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell1": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell2": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell3": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell4": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell5": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell6": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell7": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell8": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              },
+              "spell9": {
+                "castPerDayOffsetFormula": "",
+                "preparedOffsetFormula": ""
+              }
+            },
+            "spellSlotAbilityBonusFormula": "",
+            "domainSlotValue": 1,
+            "altName": ""
+          }
+        }
+      },
+      "cmb": {},
+      "woundThresholds": {
+        "override": -1
+      }
+    },
+    "details": {
+      "height": "",
+      "weight": "",
+      "gender": "",
+      "deity": "",
+      "age": "",
+      "alignment": "ne",
+      "biography": {
+        "value": "<p><em>A multi-limbed siege body. It guards the mass of lesser Voremind and reaches past them.</em></p><p><strong>Colossus of Flesh</strong> — CR 12, XP 19,200.</p><h2>Conduct</h2><p>It stays with the largest group of Voremind. The tendrils hold people still. The slams clear the ones who are actually winning.</p><h2>Species</h2><p>Every Voremind creature is a living aberration, not undead. Positive energy heals it. Negative energy harms it. Undead-only effects, including channel energy against undead, do not treat it as undead. It is immune to Assimilating Blight and not immune to other diseases. It can be critically hit, sneaked, poisoned, and affected by mind-affecting effects unless a statblock says otherwise.</p>\n<p><strong>Assimilating Blight</strong> is an extraordinary biological disease. Injury or inhaled, as the attack says. Onset 1 round, frequency 1/round for 6 rounds, 1d2 Constitution and 1d2 Wisdom damage, sickened for 1 round on a failed save, cure 2 consecutive saves. A creature that dies infected, or whose Constitution or Wisdom reaches 0 from the disease, becomes one of the Reclaimed after 1d4 rounds if the body is intact. <em>Remove disease</em> or <em>heal</em> ends the blight before that change. After the change, the creature is a new aberration.</p><p>Voremind within 300 feet share senses. This creature is also a Neural Overseer: allied Voremind within 60 feet gain +2 insight on attack and damage rolls while it can act.</p><p><strong>Overwhelming strike.</strong> Once a round, if both slams hit the same creature, it may bull rush or trip that creature without provoking.</p><p><strong>Constrict.</strong> A tendril grapple deals 2d8+11 bludgeoning. Grapple CMB is +29 with the tendrils.</p><p><strong>Parasitic tendrils.</strong> Tendril damage, Fortitude DC 26 or Assimilating Blight.</p><p><strong>Living Reconstruction.</strong> Fast healing 10, suppressed until the end of its next turn after it takes fire or acid.</p><p>Fire and acid do not bypass its defenses. On a form with fast healing, either damage type suppresses that healing until the end of its next turn.</p>"
+      },
+      "bonusFeatFormula": "",
+      "bonusSkillRankFormula": "",
+      "carryCapacity": {
+        "bonus": {
+          "user": 0
+        },
+        "multiplier": {
+          "base": 1,
+          "user": 0
+        }
+      },
+      "notes": {
+        "value": "Colossus of Flesh, CR 12. Living aberration (voremind)."
+      },
+      "cr": {
+        "base": 12
+      },
+      "xp": {
+        "value": 19200
+      },
+      "mythicTier": 0
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "rt": false,
+        "acp": true,
+        "rank": 0
+      },
+      "apr": {
+        "ability": "int",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "art": {
+        "ability": "int",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "blf": {
+        "ability": "cha",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "clm": {
+        "ability": "str",
+        "rt": false,
+        "acp": true,
+        "rank": 17
+      },
+      "crf": {
+        "ability": "int",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "dip": {
+        "ability": "cha",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "dev": {
+        "ability": "dex",
+        "rt": true,
+        "acp": true,
+        "rank": 0
+      },
+      "dis": {
+        "ability": "cha",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "esc": {
+        "ability": "dex",
+        "rt": false,
+        "acp": true,
+        "rank": 0
+      },
+      "fly": {
+        "ability": "dex",
+        "rt": false,
+        "acp": true,
+        "rank": 0
+      },
+      "han": {
+        "ability": "cha",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "hea": {
+        "ability": "wis",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "int": {
+        "ability": "cha",
+        "rt": false,
+        "acp": false,
+        "rank": 17
+      },
+      "kar": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "kdu": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "ken": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "kge": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "khi": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "klo": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "kna": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "kno": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "kpl": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "kre": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "lin": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "lor": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "per": {
+        "ability": "wis",
+        "rt": false,
+        "acp": false,
+        "rank": 17
+      },
+      "prf": {
+        "ability": "cha",
+        "rt": false,
+        "acp": false,
+        "rank": 0,
+        "subSkills": {
+          "prf1": {
+            "name": "",
+            "ability": "cha",
+            "rank": 0,
+            "rt": false,
+            "cs": false,
+            "acp": false
+          }
+        }
+      },
+      "pro": {
+        "ability": "wis",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "rid": {
+        "ability": "dex",
+        "rt": false,
+        "acp": true,
+        "rank": 0
+      },
+      "sen": {
+        "ability": "wis",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "slt": {
+        "ability": "dex",
+        "rt": true,
+        "acp": true,
+        "rank": 0
+      },
+      "spl": {
+        "ability": "int",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      },
+      "ste": {
+        "ability": "dex",
+        "rt": false,
+        "acp": true,
+        "rank": 0
+      },
+      "sur": {
+        "ability": "wis",
+        "rt": false,
+        "acp": false,
+        "rank": 0
+      },
+      "swm": {
+        "ability": "str",
+        "rt": false,
+        "acp": true,
+        "rank": 0
+      },
+      "umd": {
+        "ability": "cha",
+        "rt": true,
+        "acp": false,
+        "rank": 0
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "ageCategory": "adult",
+      "senses": {
+        "dv": {
+          "value": 60
+        },
+        "ts": {
+          "value": 0
+        },
+        "bs": {
+          "value": 0
+        },
+        "bse": {
+          "value": 0
+        },
+        "ll": {
+          "enabled": false,
+          "multiplier": {
+            "dim": 2,
+            "bright": 2
+          }
+        },
+        "ls": {
+          "value": 0
+        },
+        "sid": false,
+        "tr": {
+          "value": 60
+        },
+        "si": false,
+        "sc": {
+          "value": 0
+        },
+        "custom": ""
+      },
+      "hardness": 0,
+      "dr": {
+        "value": [
+          {
+            "amount": 10,
+            "types": [
+              "slashing"
+            ],
+            "operator": true
+          }
+        ],
+        "custom": ""
+      },
+      "eres": {
+        "value": [],
+        "custom": ""
+      },
+      "cres": "",
+      "regen": "",
+      "fastHealing": "10",
+      "languages": [],
+      "di": [],
+      "dv": [],
+      "ci": [],
+      "stature": "tall",
+      "aura": {
+        "custom": ""
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "altCurrency": {
+      "pp": 0,
+      "gp": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "customSkills": {},
+    "config": {
+      "noManeuvers": false
+    }
+  },
+  "prototypeToken": {
+    "name": "Colossus of Flesh",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 3,
+    "height": 3,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {
+      "pf1": {
+        "staticSize": false,
+        "lowLightVisionMultiplier": null,
+        "lowLightVisionMultiplierBright": null,
+        "disableLowLight": false
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null
+      },
+      "token-auras": {
+        "aura1": {
+          "permission": "all",
+          "colour": "#ffffff",
+          "opacity": 0.5,
+          "distance": null,
+          "square": false
+        },
+        "aura2": {
+          "permission": "all",
+          "colour": "#ffffff",
+          "opacity": 0.5,
+          "distance": null,
+          "square": false
+        }
+      }
+    },
+    "randomImg": false,
+    "light": {
+      "alpha": 0.25,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null,
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": "modules/critical-fail-shared/img/creatures/voremind/colossus-of-flesh-token.webp",
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": true,
+      "range": 60,
+      "brightness": 1,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": true,
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "_stats": {
+    "systemId": "pf1",
+    "systemVersion": "11.11",
+    "coreVersion": "13.351",
+    "createdTime": 1794076883523,
+    "modifiedTime": 1794076883523,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 2700000,
+  "ownership": {
+    "default": 0
+  }
+}
