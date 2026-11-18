@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.4.12] - 2026-11-17
+
+- Added three Fleshseed Swarms to the Voremind: Large (CR 4, 10-foot square), Huge (CR 7, 15-foot square), and Gargantuan (CR 10, 20-foot square, fast healing 10). Each Fleshseed is still Tiny. They use the shared swarm art, Assimilating Blight, and Synaptic Communion. The Gargantuan swarm has Greater Synaptic Communion and Assimilation Tempest.
+
 ## [1.4.11] - 2026-11-17
 
 - Added the beholderkin that were on the Test server but missing from 1.4.10: Eye of Flame, Eye of Frost, Eye of Chaos, Spectator, Lesser Spectator, Warped Spectator, Warped Death Kiss, Gauth, Gazer, Gazer Swarm, Gorbel, Gorbel Swarm, Gouger, and Clockwork Beholder, with their portraits and tokens.
